@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="css/bootstrap_min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        background-color: black !important;
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        color: #FFD700 !important;
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
+
+      .nav-link {
+        color: white !important;
+        margin-right: 15px;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #FFD700 !important;
+      }
+
+      .nav-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #FFD700;
+        transition: width 0.3s ease;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .dropdown-menu {
+        background-color: black;
+        border: 1px solid gray;
+      }
+
+      .dropdown-item {
+        color: white;
+      }
+
+      .dropdown-item:hover {
+        background-color: #FFD700;
+        color: black;
+      }
+
+  .btn-book {
+  background-color: darkred;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-book:hover {
+  background-color: #FFD700;  
+  color: black !important;   
+
+
+
+      .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* content Section */
+      .content-section {
+        background-image: url('images/food.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .content-section::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+
+      .content-section .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .content-section h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+
+      .content-section p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+
+      main {
+        min-height: 70vh;
+      }
+
+      /* Footer Styling */
+      .footer {
+        background-color: black;
+        border-top: 1px solid #FFD700;
+        padding: 60px 0 40px;
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-top: 80px;
+      }
+
+      .footer h5,
+      .footer h6 {
+        color: #FFD700;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .footer a {
+        color: #FFD700;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .footer i {
+        margin: 0 10px;
+        font-size: 1.3rem;
+        color: white;
+        transition: color 0.3s;
+      }
+
+      .footer i:hover {
+        color: #FFD700;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: #FFD700;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .footer {
+          text-align: center;
+        }
+      }
+
+   
+
+     /* About Us Styling*/
+
+.left-about-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(14, 13, 13, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.right-about-img {
+ 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(17, 17, 17, 0.3);
+  transition: transform 0.3s ease;
+}
+.left-about-img:hover,
+.right-about-img:hover {
+  transform: scale(1.03);
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.hover-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 215, 0, 0.3);
+}
+
+.menu-card {
+  
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.menu-card img {
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+.menu-card .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.menu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Services Styling */
+.icon-box-grid {
+    background-color: #2f2b28;
+    border-radius: 15px;
+    padding: 25px;
+    border-top: 4px solid #FFD700; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+
+  .icon-box-grid:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(255, 215, 0, 0.15); 
+  }
+
+  /* Icon Styling */
+  .icon-red {
+    font-size: 2rem;
+    color: red;
+    transition: all 0.3s ease;
+  }
+
+  .icon-red:hover {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+  }
+
+  
+  .btn-danger.custom-hover {
+    background-color: red;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-danger.custom-hover:hover {
+    background-color: #FFD700;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/restaurant.png" alt="Bootstrap" width="30"
+              height="24">
+            The Thali Yard
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active"
+                  href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="gallery.html"
+                  role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Gallery</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item"
+                      href="photos.html">Photos</a></li>
+                  <li><a class="dropdown-item"
+                      href="videos.html">Videos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link btn btn-book px-3 rounded-pill"
+                href="#" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book a Table
+              </a>
+
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+      <section class="content-section text-light">
+        <div class="container">
+          <h1 class="fw-bold">Welcome to <span style="color: #FFD700;">The Thali
+              Yard</span></h1>
+          <p class="lead">Relish timeless flavors, handcrafted with tradition
+            and taste</p>
+          <a href="menu.html" class="btn btn-book mt-3">View Menu</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ABOUT US Section -->
+    <section class="about-section py-5"
+      style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: #f5f5f5;">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Left Image -->
+          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right">
+            <img src="Images/food7.jpg"
+              class="img-fluid left-about-img rounded shadow"
+              alt="Traditional Thali">
+          </div>
+
+          <!-- Content -->
+          <div class="col-md-4 text-center text-md-start" data-aos="zoom-in-up">
+            <h2 style="color: #FFD700;">About The Thali Yard</h2>
+            <p>At The Thali Yard, we celebrate the essence of India’s culinary
+              tradition with every plate we serve. From handcrafted
+              Maharashtrian thalis to spicy Punjabi platters – everything is
+              prepared with love and authenticity.</p>
+            <ul class="text-start ps-3">
+              <li>✔ Traditional Indian recipes</li>
+              <li>✔ Fresh, locally sourced ingredients</li>
+              <li>✔ Affordable and satisfying</li>
+            </ul>
+            <div class="text-center mt-4">
+              <a href="about.html" class="btn btn-book">Know More</a>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-md-4 mt-4 mt-md-0" data-aos="fade-left">
+            <img src="Images/food6.jpg"
+              class="img-fluid right-about-img rounded shadow"
+              alt="Restaurant Dish">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU Section -->
+    <section class="py-5" id="menu"
+      style="background: linear-gradient(to right, #1a1a1a, #2c2c2c);">
+      <div class="container">
+        <div class="text-center mb-5 wow animate__animated animate__fadeInDown">
+          <h2 class="text-uppercase" style="color: #FFD700;">Our Menu</h2>
+          <p class="lead">Explore a curated variety of Indian dishes served in
+            authentic Thali style.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-3 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s">
+            <div class="card menu-card h-100">
+              <img src="Images/dosa.jpg" class="card-img-top"
+                alt="South Indian">
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">South Indian</h5>
+                <p class="card-text">Dosa, idli, vada served with sambar and
+                  coconut chutney.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-3 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.4s">
+            <div class="card menu-card h-100">
+              <img src="Images/thali3.jpg" class="card-img-top"
+                alt="Maharashtrian">
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">Maharashtrian</h5>
+                <p class="card-text">Puran poli, bharli vangi, bhakri & spicy
+                  thecha.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-3 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.6s">
+            <div class="card menu-card h-100">
+              <img src="Images/chinese.jpg" class="card-img-top" alt="Chinese">
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">Chinese</h5>
+                <p class="card-text">Fried rice, noodles, manchurian – full of
+                  Indo-Chinese flavor.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-3 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.8s">
+            <div class="card menu-card h-100">
+              <img src="Images/food5.jpg" class="card-img-top"
+                alt="North Indian">
+              <div class="card-body text-center">
+                <h5 class="card-title text-warning">North Indian</h5>
+                <p class="card-text">Paneer butter masala, dal tadka, naan, and
+                  gulab jamun.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 wow animate__animated animate__zoomIn"
+          data-wow-delay="1s">
+          <a href="menu.html" class="btn btn-book">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES Section -->
+    <section class="py-5"
+      style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: #f5f5f5;">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2 class="text-uppercase" style="color: #FFD700;">Our Services</h2>
+          <p class="lead">We offer more than just food — we deliver
+            unforgettable experiences.</p>
+        </div>
+
+        <div class="row text-center">
+          <!-- Service 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="icon-box-grid p-4 rounded-4" data-aos="fade-up"
+              data-aos-delay="100">
+              <i class="bi bi-shop-window icon-red"></i>
+              <h6 class="mt-3 fw-bold">Dine-In Experience</h6>
+              <p class="small">Comfortable seating with warm hospitality and
+                hygienic surroundings.</p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="icon-box-grid p-4 rounded-4" data-aos="fade-up"
+              data-aos-delay="200">
+              <i class="bi bi-bag-check icon-red"></i>
+              <h6 class="mt-3 fw-bold">Takeaway Delight</h6>
+              <p class="small">Hot, packed and ready to go — enjoy The Thali
+                Yard from home.</p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="icon-box-grid p-4 rounded-4" data-aos="fade-up"
+              data-aos-delay="300">
+              <i class="bi bi-box-seam icon-red"></i>
+              <h6 class="mt-3 fw-bold">Catering</h6>
+              <p class="small">Make your weddings, parties and events flavorful
+                and memorable.</p>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="icon-box-grid p-4 rounded-4" data-aos="fade-up"
+              data-aos-delay="400">
+              <i class="bi bi-calendar-event icon-red"></i>
+              <h6 class="mt-3 fw-bold">Event Booking</h6>
+              <p class="small">Reserve tables or book private celebrations with
+                custom menus.</p>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="icon-box-grid p-4 rounded-4" data-aos="fade-up"
+              data-aos-delay="500">
+              <i class="bi bi-laptop icon-red"></i>
+              <h6 class="mt-3 fw-bold">Online Ordering</h6>
+              <p class="small">Order your favorite thalis online and get them
+                delivered at your doorstep.</p>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-4 mb-4">
+            <div class="icon-box-grid p-4 rounded-4" data-aos="fade-up"
+              data-aos-delay="600">
+              <i class="bi bi-gear icon-red"></i>
+              <h6 class="mt-3 fw-bold">Custom Thali Setup</h6>
+              <p class="small">Choose your dishes and create your personalized
+                thali for a unique experience.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" data-aos="zoom-in" data-aos-delay="700">
+          <a href="services.html"
+            class="btn btn-danger custom-hover px-4 py-2 rounded-pill mt-3">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US Section -->
+    <section class="py-5"
+      style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: #f5f5f5;">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-uppercase" style="color: #FFD700;">Contact Us</h2>
+          <p class="lead">We’re here to help — whether you have a question,
+            feedback, or a reservation request.</p>
+        </div>
+
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-md-6 mb-4">
+            <h5 style="color: red;">Get in Touch</h5>
+            <p><strong>📍 Address:</strong> The Thali Yard, Near Food Street,
+              Sitabuldi, Nagpur, MH - 440001</p>
+            <p><strong>📞 Phone:</strong> +91-9876543210</p>
+            <p><strong>📧 Email:</strong> info@thethaliyard.com</p>
+            <p><strong>⏰ Timings:</strong> Mon - Fri: 11 AM to 10 PM | Sat -
+              Sun: 12 PM to 11:30 PM</p>
+            <div class="mt-3">
+              <a href="https://www.google.com/maps/place/Nagpur" target="_blank"
+                class="btn btn-book">View on Map</a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-6 mb-4">
+            <h5 style="color: red;">Send Us a Message</h5>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name"
+                  required />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control"
+                  placeholder="Your Email" required />
+              </div>
+              <div class="mb-3">
+                <input type="number" class="form-control"
+                  placeholder="Your Phone Number" required />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4"
+                  placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-book">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-4 pb-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Address -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold">Address</h6>
+            <p>
+              The Thali Yard, <br>
+              Near Food Street, Nagpur, MH - 440001<br>
+              📞 +91-9876543210<br>
+              ✉️ info@thethaliyard.com
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4 footer-links">
+            <h6 class="text-uppercase fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="col-md-3 mb-4 footer-links">
+            <h6 class="text-uppercase fw-bold">Follow Us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold">Opening Hours</h6>
+            <p>
+              Mon – Fri: 11:00 AM – 10:00 PM<br>
+              Sat – Sun: 12:00 PM – 11:30 PM
+            </p>
+            <div class="mt-3">
+              <h6 class="text-uppercase fw-bold">Find Us</h6>
+              <a href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur"
+                target="_blank" class="text-white text-decoration-none">
+                <i class="bi bi-geo-alt-fill" style="color: #FFD700;"></i> View
+                on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-color: #FFD700;" />
+
+        <div class="text-center pt-2">
+          <p class="mb-0">&copy; 2025 <span style="color: #FFD700;">The Thali
+              Yard</span>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+    <!-- Animate.css -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- WOW.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+  new WOW().init();
+</script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+    <!-- Reservation Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1"
+      aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-warning" id="bookingModalLabel">Reserve
+              Your Table</h5>
+            <button type="button" class="btn-close btn-close-white"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <form id="reservationForm">
+            <div class="modal-body">
+              <!-- Alert Box (Hidden initially) -->
+              <div id="successAlert" class="alert alert-success d-none"
+                role="alert">
+                ✅ Your table has been booked successfully!
+              </div>
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name"
+                  placeholder="Enter your name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone"
+                  placeholder="e.g. 9876543210" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="guests" class="form-label">No. of Guests</label>
+                <input type="number" class="form-control" id="guests" min="1"
+                  placeholder="e.g. 4" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="time" required>
+              </div>
+            </div>
+
+            <div class="modal-footer border-0 justify-content-between">
+              <button type="button" class="btn btn-secondary"
+                data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-warning text-dark">Book
+                Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+  document.getElementById("reservationForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form from reloading page
+
+    // Show the success alert
+    document.getElementById("successAlert").classList.remove("d-none");
+
+    // Optionally reset the form
+    this.reset();
+
+    // Hide the alert and modal after a few seconds
+    setTimeout(() => {
+      document.getElementById("successAlert").classList.add("d-none");
+      const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+      modal.hide();
+    }, 2000);
+  });
+</script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet">
+
+  </body>
+</html>
