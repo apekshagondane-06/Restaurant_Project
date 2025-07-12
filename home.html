@@ -189,25 +189,23 @@
         }
       }
 
-   /* About Us Styling*/
+   /* About Us Styling */
 
-.left-about-img {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(14, 13, 13, 0.3);
-  transition: transform 0.3s ease;
-}
-
+.left-about-img,
 .right-about-img {
- 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(17, 17, 17, 0.3);
-  transition: transform 0.3s ease;
-}
-.left-about-img:hover,
-.right-about-img:hover {
-  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Zoom + Gold Glow on Hover */
+.left-about-img:hover,
+.right-about-img:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 8px 18px rgba(255, 215, 0, 0.35); 
+}
+
+/* Custom Fade-Up Animation */
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -224,14 +222,7 @@
   animation: fadeUp 1s ease-out forwards;
 }
 
-.hover-shadow {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hover-shadow:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(255, 215, 0, 0.3);
-}
-
+/* Menu Styling */
 .menu-card {
   
   border: none;
@@ -398,8 +389,8 @@
         </div>
       </section>
     </main>
-     <!-- About Us -->
-<section class="about-section py-5"
+    <!-- About Us -->
+    <section class="about-section py-5"
   style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: #f5f5f5;">
   <div class="container">
 
@@ -413,19 +404,23 @@
 
       <!-- Left Side: Image -->
       <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-        <img src="Images/food7.jpg" class="img-fluid rounded shadow" alt="Traditional Thali">
+        <img src="Images/food7.jpg" class="img-fluid left-about-img" alt="Traditional Thali">
       </div>
 
       <!-- Right Side: Content -->
       <div class="col-md-6 text-center text-md-start" data-aos="fade-left">
         <h3 style="color: #FFD700;">The Thali Yard</h3>
         <p>
-          <strong>Founded in 2021</strong>, The Thali Yard is built on the idea of serving soulful Indian meals that feel like home. 
-          Our name reflects our passion for bringing people together over a wholesome and balanced platter — a true celebration of tradition.
+          <strong>Founded in 2021</strong>, The Thali Yard is built on the
+          idea of serving soulful Indian meals that feel like home.
+          Our name reflects our passion for bringing people together over a
+          wholesome and balanced platter — a true celebration of tradition.
         </p>
         <p>
-          Each thali is crafted with care, offering a harmony of flavors, freshness, and comfort in every bite. 
-          We blend age-old culinary values with a touch of modern hospitality to create a warm and memorable dining experience.
+          Each thali is crafted with care, offering a harmony of flavors,
+          freshness, and comfort in every bite.
+          We blend age-old culinary values with a touch of modern
+          hospitality to create a warm and memorable dining experience.
         </p>
         <ul class="text-start ps-3">
           <li data-aos="fade-up" data-aos-delay="100">✔ Authentic and handcrafted recipes</li>
@@ -441,6 +436,7 @@
     </div>
   </div>
 </section>
+
 
     <!-- MENU Section -->
     <section class="py-5" id="menu"
@@ -729,7 +725,7 @@
     <script>
   new WOW().init();
 </script>
-   
+
     <!-- Booking Modal -->
     <div class="modal fade" id="bookingModal" tabindex="-1"
       aria-labelledby="bookingModalLabel" aria-hidden="true">
@@ -803,19 +799,19 @@
     }, 2000);
   });
 </script>
-  <!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet">
 
-     <!-- for Menu section AOS JS befor -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
- <script>
+    <!-- for About section AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
   AOS.init();
 </script>
-  <!-- Animate.css -->
+    <!-- Animate.css -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Menu aos WOW.js -->
