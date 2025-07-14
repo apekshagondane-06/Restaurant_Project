@@ -4,6 +4,8 @@ body {
         color: white;
         margin: 0;
         padding: 0;
+        background: linear-gradient(to right, #fff8e7, #f5e1a4);
+        color: #2c1b10;
       
       }
 
@@ -82,7 +84,8 @@ body {
   color: black !important;
 }
 
-/* Toggler Button Fix (White icon & border) */
+/* Toggler Button Fix 
+ */
 .navbar-toggler {
   border: 1px solid white;
 }
@@ -345,3 +348,58 @@ body {
   color: black;
   box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
 }
+
+      .section-title {
+        color: #8B0000;
+        font-weight: bold;
+      }
+
+      .form-control {
+        border: 1px solid #201c01;
+        background-color: #f9f3e5;
+        color: #2c1b10;
+      }
+
+      .form-control:focus {
+        border-color: #8B0000;
+        box-shadow: 0 0 10px rgba(139, 0, 0, 0.2);
+      }
+
+      .btn-submit {
+        background-color: #8B0000;
+        color: #fff;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+
+      .btn-submit:hover {
+        background-color: #FFD700;
+        color: #000;
+      }
+
+      .contact-info p i {
+        color: #b90202;
+        margin-right: 10px;
+      }
+
+      .map-container iframe {
+        border: 1px solid #181401;
+        border-radius: 12px;
+      }
+
+      .text-white {
+        color: #4b0000 !important;
+      }
+
+      .contact-form label {
+        font-weight: 500;
+        color: #4b0000;
+      }
+
+      .footer {
+        background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+        color: white;
+        padding-top: 40px;
+      }
