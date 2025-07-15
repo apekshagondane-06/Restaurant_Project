@@ -4,8 +4,8 @@ body {
         color: white;
         margin: 0;
         padding: 0;
-        background: #f9f5ef;
-        color: #2c1b10;
+        background: rgb(70, 68, 68);
+        color: white;
       
       }
 
@@ -403,3 +403,4 @@ body {
         color: white;
         padding-top: 40px;
       }
+       
