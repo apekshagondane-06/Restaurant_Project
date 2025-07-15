@@ -9,7 +9,7 @@ body {
       
       }
 
-      /* Navbar Styling */
+  /* Navbar Styling */
 .navbar {
   background-color: black !important;
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
@@ -206,7 +206,7 @@ body {
   transform: scale(1.05) translateY(-5px);
   box-shadow: 0 10px 20px rgba(63, 1, 1, 0.45);
   filter: brightness(1.05) saturate(1.1);
-  outline: 2px solid rgba(255, 215, 0, 0.5); /* Gold outline */
+  outline: 2px solid rgba(255, 215, 0, 0.5); 
 }
 
 
@@ -315,7 +315,7 @@ body {
 .icon-box-grid:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 25px rgba(1, 53, 44, 0.35); 
-  background-color: #1d0c00; /* optional darker on hover */
+  background-color: #1d0c00;
 }
 
 /* Icon Styling - Red base with golden glow on hover */
