@@ -1,60 +1,63 @@
-/* Navbar Styling */
-      .navbar {
-        background-color: black;
-        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
-      }
+  /* Navbar Styling */
+.navbar {
+  background-color: black !important;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+  font-size: 20px;
+}
 
-      .navbar-brand {
-        color: #FFD700;
-        font-weight: 600;
-        font-size: 1.6rem;
-      }
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 
-      .nav-link {
-        color: white;
-        margin-right: 15px;
-        position: relative;
-        transition: all 0.3s ease;
-      }
+.nav-link {
+  color: white !important;
+  margin-right: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
 
-      .nav-link:hover {
-        color: #FFD700;
-      }
+.nav-link:hover {
+  color: #FFD700 !important;
+}
 
-      .nav-link::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #FFD700;
-        transition: width 0.3s ease;
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-      }
-    .nav-item {
-     list-style: none;
-     }
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
 
-      .nav-link:hover::after {
-        width: 100%;
-      }
+.nav-item {
+  list-style: none;
+}
 
-      .dropdown-menu {
-        background-color: black;
-        border: 1px solid gray;
-      }
+.nav-link:hover::after {
+  width: 100%;
+}
 
-      .dropdown-item {
-        color: white;
-      }
+.dropdown-menu {
+  background-color: black;
+  border: 1px solid gray;
+}
 
-      .dropdown-item:hover {
-        background-color: #FFD700;
-        color: black;
-      }
+.dropdown-item {
+  color: white;
+}
 
-  .btn-book {
+.dropdown-item:hover {
+  background-color: #FFD700;
+  color: black;
+}
+
+/* Book a Table Button */
+.btn-book {
   background-color: darkred;
   color: white;
   font-weight: 500;
@@ -66,11 +69,18 @@
 }
 
 .btn-book:hover {
-  background-color: #FFD700;  
-  color: black !important;   }
+  background-color: #FFD700;
+  color: black !important;
+}
 
+/* Toggler Button Fix 
+ */
 .navbar-toggler {
-border-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 body {
