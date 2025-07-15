@@ -4,7 +4,7 @@ body {
         color: white;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to right, #fff8e7, #f5e1a4);
+        background: #f9f5ef;
         color: #2c1b10;
       
       }
@@ -344,11 +344,11 @@ body {
 }
 
 .btn-danger.custom-hover:hover {
-  background-color: #f34d56;
+  background-color: #FFD700; 
   color: black;
   box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
 }
-
+/* contact us styling */
       .section-title {
         color: #8B0000;
         font-weight: bold;
