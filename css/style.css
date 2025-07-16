@@ -4,8 +4,8 @@ body {
         color: white;
         margin: 0;
         padding: 0;
-        background: rgb(70, 68, 68);
-        color: white;
+         background-color: #ffffff; /* Page background white */
+  color: #2c2c2c; /* Default text color */
       
       }
 
@@ -348,59 +348,95 @@ body {
   color: black;
   box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
 }
-/* contact us styling */
-      .section-title {
-        color: #8B0000;
-        font-weight: bold;
-      }
+/* Contact Section Styling */
+/* Section Title */
+.section-title {
+  color: #B22222; /* Firebrick red */
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
 
-      .form-control {
-        border: 1px solid #201c01;
-        background-color: #f9f3e5;
-        color: #2c1b10;
-      }
+/* Form Styling */
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
-      .form-control:focus {
-        border-color: #8B0000;
-        box-shadow: 0 0 10px rgba(139, 0, 0, 0.2);
-      }
+.contact-form label {
+  color: #8B0000;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 
-      .btn-submit {
-        background-color: #8B0000;
-        color: #fff;
-        border: none;
-        padding: 10px 25px;
-        border-radius: 30px;
-        transition: 0.3s;
-      }
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdf9f3;
+  color: #333;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
 
-      .btn-submit:hover {
-        background-color: #FFD700;
-        color: #000;
-      }
+.form-control:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  background-color: #fffef6;
+  color: #111;
+}
 
-      .contact-info p i {
-        color: #b90202;
-        margin-right: 10px;
-      }
+/* Submit Button */
+.btn-submit {
+  background-color: #B22222;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
 
-      .map-container iframe {
-        border: 1px solid #181401;
-        border-radius: 12px;
-      }
+.btn-submit:hover {
+  background-color: #FFD700;
+  color: #000;
+}
 
-      .text-white {
-        color: #4b0000 !important;
-      }
+/* Contact Info Styling */
+.contact-info {
+  background: #fdf9f3;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
-      .contact-form label {
-        font-weight: 500;
-        color: #4b0000;
-      }
+.contact-info p {
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 10px;
+}
 
-      .footer {
-        background: linear-gradient(to right, #1a1a1a, #2c2c2c);
-        color: white;
-        padding-top: 40px;
-      }
-       
+.contact-info i {
+  color: #8B0000;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Map Container */
+.map-container iframe {
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  width: 100%;
+  height: 260px;
+  margin-top: 15px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    padding: 20px;
+  }
+}
