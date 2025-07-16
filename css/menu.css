@@ -1,0 +1,23 @@
+b {
+    font-size: 23px;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+.text_size {
+    font-size: 23px;
+    padding-bottom: 45px;
+}
+
+.hov:hover {
+color: black;
+background-color: #FFD700; 
+}
+
+.bton {
+background-color: #700303; 
+color: white;
+}
+
