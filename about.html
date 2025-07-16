@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link href="css/bootstrap_min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/restaurant.png" alt="Bootstrap" width="30"
+              height="24">
+            The Thali Yard
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active"
+                  href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link btn btn-book px-3 rounded-pill"
+                href="#" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book a Table
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     
+<section class="py-5" style="background: #232222; color: white;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-heading text-warning">About Us</h2>
+      <p class="lead"><b>More than food – it’s a flavorful journey of tradition and togetherness.</b></p>
+    </div>
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="scene">
+          <div class="cube" id="cube">
+            <div class="face front"><img src="Images/chinese.jpg" alt="Image 1"></div>
+            <div class="face right"><img src="Images/dosa.jpg" alt="Image 2"></div>
+            <div class="face back"><img src="Images/food5.jpg" alt="Image 3"></div>
+            <div class="face left"><img src="Images/thali3.jpg" alt="Image 4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-md-6 text-light justify-text">
+        <p>The Thali Yard was founded in 2021 with a single mission — to revive the charm of
+          traditional Indian meals and serve them in a way that feels like home. We believe food is not just
+          nourishment, but an experience that connects people, evokes emotions, and celebrates heritage.</p>
+
+        <p>Inspired by the diverse flavors of India, our thalis bring together regional delicacies
+          on one plate—balanced, wholesome, and made with love. From Maharashtrian spice to South Indian
+          comfort, every thali reflects authenticity and attention to detail. Our chefs pour their heart
+          into every recipe, ensuring that your meal is not only delicious but also rooted in authenticity.</p>
+
+        <p>Our restaurant is not just a place to eat — it's a space where families gather, memories are made,
+          and food is served with a smile. Whether you dine in, take out, or book us for an event, we promise
+          quality, taste, and warmth in every bite. We take pride in sourcing fresh, local ingredients that
+          uplift both flavor and sustainability. Our chefs pour their heart into every recipe, ensuring that
+          your meal is not only delicious but also rooted in authenticity</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Customer Testimonials -->
+<section class="py-5 text-light" style="background-color: white; color: black">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-warning">What Our Customers Say</h2>
+      <p class="lead text-dark mt-3">Real stories from real food lovers</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Testimonial Card -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"The thali was perfectly balanced and so flavorful. Reminded me of my mom's cooking!"
+            </p>
+          </div>
+          <div class="card-footer ">
+            <h6 class="text-warning">— Priya S., Nagpur</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"Fantastic ambiance and staff. Loved the Maharashtrian thali with spicy thecha!"</p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-warning">— Rohan M., Wardha</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"The online ordering is super smooth. Food arrives fresh and hot every time."</p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-warning">— Anjali D., Sitabuldi</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"Tried their custom thali—amazing concept! I picked my favorites and it was perfect."
+            </p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-warning">— Kunal T., Nagpur</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"Service was quick and courteous. The gulab jamun in the North Indian thali is a
+              must-try!"</p>
+          </div>
+          <div class="card-footer">
+            <h6 class="text-warning">— Mansi R., Amravati</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"I love their fusion of tradition and presentation. It feels like a festival on a
+              plate."</p>
+          </div>
+          <div class="card-footer ">
+            <h6 class="text-warning">— Varun B., Kamptee</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"Affordable prices and generous portions. A must-visit for thali lovers!"</p>
+          </div>
+          <div class="card-footer ">
+            <h6 class="text-warning">— Sneha P., Akola</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark  testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"Clean, hygienic, and quick service. Their weekend special is my favorite."</p>
+          </div>
+          <div class="card-footer ">
+            <h6 class="text-warning">— Aditya G., Yavatmal</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card h-100 testimonial-card">
+          <div class="card-body">
+            <p class="card-text">"Visually stunning presentation and authentic taste. Keeps me coming back!"</p>
+          </div>
+          <div class="card-footer ">
+            <h6 class="text-warning">— Meena R., Chandrapur</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    
+    <!-- Why Choose Us -->
+<section class="py-5 text-light" style="background: #232222; color: white;">
+  <div class="container">
+    <h2 class="text-center text-warning mb-5 mt-3">Why Choose Us</h2>
+    <div class="row align-items-center">
+
+      <!-- Image -->
+      <div class="col-md-6 text-center">
+        <img src="Images/restro1.jpg" class="img-fluid rounded-4 shadow border border-light" alt="Traditional Thali"
+          style="max-height: 500px;">
+      </div>
+
+      <!-- Feature List -->
+      <div class="col-md-6">
+        <div class="p-4  rounded-4  " style="background: #444242">
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Home-style recipes passed down through generations.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Fresh, locally sourced vegetables and grains.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Custom thali options for personal preferences.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Friendly staff and cozy ambience.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Affordable pricing without compromising quality.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Clean and hygienic kitchen practices.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Fast service for takeaway and online orders.</span>
+            </li>
+            <li class="d-flex align-items-start mb-3 why-us-point">
+              <i class="bi bi-check-circle-fill text-success fs-5 me-3"></i>
+              <span>Special arrangements for functions and bulk bookings.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section Starts-->
+  <footer class="footer" style="background: linear-gradient(to right, #1a1a1a, #2c2c2c);">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Address -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Address</h6>
+          <p>
+            The Thali Yard, <br>
+            Near Food Street, Nagpur,<br>
+            MH - 440001<br>
+          </p>&#128222; +91-9876543210<br>
+          ✉️ info@thethaliyard.com
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4 footer-links">
+          <h6 class="text-uppercase fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Follow Us -->
+        <div class="col-md-3 mb-4 footer-links">
+          <h6 class="text-uppercase fw-bold">Follow Us</h6>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          </ul>
+        </div>
+  
+        <!-- Opening Hours -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Opening Hours</h6>
+          <p>
+            Mon - Fri: 11:00 AM - 10:00 PM<br>
+            Sat - Sun: 12:00 PM - 11:30 PM
+          </p>
+          <div class="mt-3">
+            <h6 class="text-uppercase fw-bold">Find Us</h6>
+            <a href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur" target="_blank"
+              style="color: #ffffff; text-decoration: none;">
+              <i class="bi bi-geo-alt-fill" style="color: #FFD700;"></i> View on Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <hr style="border-color: #FFD700;" />
+      <div class="text-center pt-2">
+        <p class="mb-0">&copy; 2025 <span style="color: #FFD700;">The Thali
+            Yard</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script type="text/javascript" src="JS/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+ /* Navbar Styling */
+.navbar {
+  background-color: black !important;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.nav-link {
+  color: white !important;
+  margin-right: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700 !important;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  background-color: black;
+  border: 1px solid gray;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #FFD700;
+  color: black;
+}
+/* Book a Table Button */
+.btn-book {
+  background-color: darkred;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-book:hover {
+  background-color: #FFD700;
+  color: black !important;
+}
+
+/* Toggler Button Fix 
+ */
+.navbar-toggler {
+  border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+  margin: 0;
+}
+.section-heading {
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.highlight-box {
+  border: 1px solid #FFD700;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  transition: 0.3s ease;
+  background-color: #1a1a1a;
+}
+.highlight-box:hover {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  transform: translateY(-5px);
+}
+.why-us-point {
+  margin-bottom: 10px;
+  color: white;
+}
+    
+.justify-text {
+  text-align: justify;
+}
+.image-box-rotate {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  perspective: 1000px;
+}
+
+.image-box-rotate img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.testimonial-card {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #FFBF00;
+  border-radius: 3px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgb(217, 184, 52);
+}
+
+  .why-us-point:hover i {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+.card-body{
+  background-color: #2d2c2c;
+}
+.card-footer{
+ background-color: #100f0f; 
+}
+.card-text{
+    color: white;
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: black;
+  border-top: 1px solid #FFD700;
+  padding: 20px 0 0px;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+
+.footer h5,
+.footer h6 {
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer i {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer i:hover {
+  color: #FFD700;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+       /* body {
+      margin: 0;
+      background: #ad2c2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    } */
+
+.scene {
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.face {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+   
+.front {
+  transform: rotateY(0deg) translateZ(250px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(250px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(250px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(250px);
+}
