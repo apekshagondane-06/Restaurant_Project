@@ -83,8 +83,7 @@ body {
   color: black !important;
 }
 
-/* Toggler Button Fix 
- */
+/* Toggler Button Fix */
 .navbar-toggler {
   border: 1px solid white;
 }
@@ -199,7 +198,7 @@ body {
   outline: 2px solid transparent;
 }
 
-/* Enhanced Hover: Zoom + Gold Glow + Overlay */
+/* Hover: Zoom + Gold Glow + Overlay */
 .left-about-img:hover,
 .right-about-img:hover {
   transform: scale(1.05) translateY(-5px);
@@ -352,7 +351,7 @@ body {
   background-color: #fffaf0;
   padding: 60px 20px;
 }
-
+ /* contact us styling */
 .section-title {
   color: #8B0000;
   font-weight: 700;
