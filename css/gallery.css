@@ -4,3 +4,88 @@
     object-fit: cover;
     display: block;
 }
+    /* Footer Styling */
+.footer {
+  background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+  border-top: 1px solid #FFD700;
+  padding: 20px 0 0px;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+
+.footer h5,
+.footer h6 {
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer i {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer i:hover {
+  color: #FFD700;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+.footer-map-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-map-link:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+.footer-map-icon {
+  color: #FFD700;
+}
+
+.footer-divider {
+  border-color: #FFD700;
+}
+
+.footer-brand-name {
+  color: #FFD700;
+}
+.map-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  color: #FFD700;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
