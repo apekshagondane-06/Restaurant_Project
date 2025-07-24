@@ -1,0 +1,210 @@
+  /* Navbar Styling */
+.navbar {
+  background-color: black !important;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.nav-link {
+  color: white !important;
+  margin-right: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700 !important;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* Book a Table Button */
+.btn-book {
+  background-color: darkred;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-book:hover {
+  background-color: #FFD700;
+  color: black !important;
+}
+
+/* Toggler Button Fix */
+.navbar-toggler {
+  border: 1px solid white;
+}
+  
+  
+  body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .menu-section {
+      padding: 60px 20px;
+    }
+
+    .menu-title {
+      color: #FFD700;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+
+    .menu-card {
+      background-color: #2a2a2a;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+    }
+
+    .menu-card img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .menu-card .card-body {
+      padding: 20px;
+    }
+
+    .menu-card .card-title {
+      color: #FFD700;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .menu-card .card-text {
+      color: #ccc;
+    }
+
+    .menu-card .price {
+      color: #FF4D4D;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    /* Footer Styling */
+.footer {
+  background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+  border-top: 1px solid #FFD700;
+  padding: 20px 0 0px;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+
+.footer h5,
+.footer h6 {
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer i {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer i:hover {
+  color: #FFD700;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+.footer-map-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-map-link:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+.footer-map-icon {
+  color: #FFD700;
+}
+
+.footer-divider {
+  border-color: #FFD700;
+}
+
+.footer-brand-name {
+  color: #FFD700;
+}
+.map-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  color: #FFD700;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}

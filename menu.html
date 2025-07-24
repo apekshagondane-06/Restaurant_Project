@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="css/bootstrap_min.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/restaurant.png" alt="Bootstrap" width="30"
+              height="24">
+            The Thali Yard
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light fs-3"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active"
+                  href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link btn btn-book px-3 rounded-pill"
+                href="#" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book a Table
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Section Ends -->
+
+    <!-- Menu section starts -->
+    <section class="menu-section">
+      <h2 class="menu-title" data-aos="zoom-in"
+        data-aos-duration="1000">Maharashtrian Thali</h2>
+
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?puranpoli"
+                alt="Puran Poli">
+              <div class="card-body">
+                <h5 class="card-title">Puran Poli</h5>
+                <p class="card-text">Sweet stuffed flatbread made with jaggery
+                  and dal.</p>
+                <p class="price">₹80</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?misalpav"
+                alt="Misal Pav">
+              <div class="card-body">
+                <h5 class="card-title">Misal Pav</h5>
+                <p class="card-text">Spicy sprouted curry served with pav and
+                  farsan.</p>
+                <p class="price">₹90</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?bhakri"
+                alt="Bhakri">
+              <div class="card-body">
+                <h5 class="card-title">Jowar Bhakri</h5>
+                <p class="card-text">Millet flatbread served with thecha and
+                  curry.</p>
+                <p class="price">₹70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?vada"
+                alt="Batata Vada">
+              <div class="card-body">
+                <h5 class="card-title">Batata Vada</h5>
+                <p class="card-text">Crispy fried potato dumpling – street food
+                  favorite.</p>
+                <p class="price">₹50</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="menu-section">
+      <h2 class="menu-title" data-aos="zoom-in" data-aos-duration="1000">South
+        Indian Thali</h2>
+
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?dosa"
+                alt="Masala Dosa">
+              <div class="card-body">
+                <h5 class="card-title">Masala Dosa</h5>
+                <p class="card-text">Crispy dosa filled with spicy potato masala
+                  and served with chutney & sambar.</p>
+                <p class="price">₹110</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?idli"
+                alt="Idli Sambar">
+              <div class="card-body">
+                <h5 class="card-title">Idli Sambar</h5>
+                <p class="card-text">Steamed rice cakes with hot sambar and
+                  coconut chutney.</p>
+                <p class="price">₹70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?uttapam"
+                alt="Uttapam">
+              <div class="card-body">
+                <h5 class="card-title">Vegetable Uttapam</h5>
+                <p class="card-text">Thick dosa topped with onions, tomatoes,
+                  green chillies & coriander.</p>
+                <p class="price">₹90</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
+            <div class="card menu-card">
+              <img src="https://source.unsplash.com/400x300/?pongal"
+                alt="Ven Pongal">
+              <div class="card-body">
+                <h5 class="card-title">Ven Pongal</h5>
+                <p class="card-text">Traditional ghee rice-lentil porridge with
+                  pepper and cashews.</p>
+                <p class="price">₹80</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section Starts-->
+    <footer class="footer custom-footer-bg">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Address -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold">Address</h6>
+            <p>
+              The Thali Yard, <br>
+              Near Food Street, Nagpur,<br>
+              MH - 440001<br>
+            </p>
+            &#128222; +91-9876543210<br>
+            ✉️ info@thethaliyard.com
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4 footer-links">
+            <h6 class="text-uppercase fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="col-md-3 mb-4 footer-links">
+            <h6 class="text-uppercase fw-bold">Follow Us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold">Opening Hours</h6>
+            <p>
+              Mon - Fri: 11:00 AM - 10:00 PM<br>
+              Sat - Sun: 12:00 PM - 11:30 PM
+            </p>
+            <div class="mt-3">
+              <h6 class="text-uppercase fw-bold">Find Us</h6>
+              <a href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur"
+                target="_blank"
+                class="map-link">
+                <i class="bi bi-geo-alt-fill icon-gold"></i> View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="text-center pt-2">
+          <p class="mb-0">&copy; 2025 <span class="text-gold">The Thali
+              Yard</span>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section Ends -->
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1"
+      aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-warning" id="bookingModalLabel">Reserve
+              Your Table</h5>
+            <button type="button" class="btn-close btn-close-white"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="reservationForm">
+            <div class="modal-body">
+              <!-- Alert Box -->
+              <div id="successAlert" class="alert alert-success d-none"
+                role="alert">
+                &#9989; Your table has been booked successfully!
+              </div>
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name"
+                  placeholder="Enter your name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone"
+                  placeholder="e.g. 9876543210" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="guests" class="form-label">No. of Guests</label>
+                <input type="number" class="form-control" id="guests" min="1"
+                  placeholder="e.g. 4" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="time" required>
+              </div>
+            </div>
+
+            <div class="modal-footer border-0 justify-content-between">
+              <button type="button" class="btn btn-secondary"
+                data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-warning text-dark">Book
+                Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Book a table sucessfull alert Js -->
+    <script>
+  document.getElementById("reservationForm").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    document.getElementById("successAlert").classList.remove("d-none");
+    this.reset();
+    
+    setTimeout(() => {
+      document.getElementById("successAlert").classList.add("d-none");
+      const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+      modal.hide();
+    }, 2000);
+  });
+</script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+  AOS.init({
+    offset: 100,
+    duration: 1000,
+    easing: 'ease-in-out',
+    delay: 100,
+    once: true
+  });
+</script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet">
+
+  </body>
+</html>
