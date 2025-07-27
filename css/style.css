@@ -10,6 +10,9 @@ body {
       
       }
   /* Navbar Styling */
+  body {
+  padding-top: 60px; /* Adjust depending on navbar height */
+}
 .navbar {
   background-color: black !important;
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
@@ -70,6 +73,7 @@ body {
   background-color: #FFD700;
   color: black !important;
 }
+
 
 /* Toggler Button Fix */
 .navbar-toggler {
