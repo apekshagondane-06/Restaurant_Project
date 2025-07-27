@@ -1,6 +1,6 @@
   /* Navbar Styling */
    body {
-  padding-top: 60px; /* Adjust depending on navbar height */
+  padding-top: 40px; /* Adjust depending on navbar height */
 }
 .navbar {
   background-color: black !important;
