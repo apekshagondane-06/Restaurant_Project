@@ -98,7 +98,7 @@
 
     .menu-card:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
     }
 
     .menu-card img {
@@ -212,4 +212,16 @@
   .footer {
     text-align: center;
   }
+}
+
+.order-btn {
+  transition: all 0.3s ease;
+  background-color:  darkred;
+  
+}
+
+.order-btn:hover {
+  background-color: #ffdd00 !important; 
+  color: black !important;
+
 }

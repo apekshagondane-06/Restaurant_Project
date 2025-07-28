@@ -15,40 +15,50 @@
   <body>
     <!-- Navbar -->
     <header>
-  <nav class="navbar navbar-expand-lg fixed-top"> 
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Images/restaurant.png" alt="Bootstrap" width="30" height="24">
-        The Thali Yard
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars text-light fs-3"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <li class="nav-item">
-          <a class="nav-link btn btn-book px-3 rounded-pill" href="#" data-bs-toggle="modal"
-            data-bs-target="#bookingModal">
-            Book a Table
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/restaurant.png" alt="Bootstrap" width="30"
+              height="24">
+            The Thali Yard
           </a>
-        </li>
-      </div>
-    </div>
-  </nav>
-</header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light fs-3"></i>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active"
+                  href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal">
+                Book a Table
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- Menu section starts -->
+
+    <!-- Mahrashtrian Section starts -->
     <section class="menu-section">
       <h2 class="menu-title" data-aos="zoom-in"
         data-aos-duration="1000">Maharashtrian</h2>
@@ -59,12 +69,22 @@
           <!-- Card 1 -->
           <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
             <div class="card menu-card h-100">
-              <img src="Images/thali3.jpg"
-                alt="Maharashtrian Veg Thali">
-              <div class="card-body">
-                <h5 class="card-title">Maharashtrian Veg Thali</h5>
-                <p class="card-text">Includes puran poli, bhaji, amti, rice, papad, pickle, solkadhi, dessert</p>
-                <p class="price">₹250</p>
+              <img src="Images/thali3.jpg" alt="Maharashtrian Veg Thali">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Maharashtrian Veg Thali</h5>
+                  <p class="card-text">Includes puran poli, bhaji, amti, rice,
+                    papad, pickle, solkadhi, dessert</p>
+                  <p class="price">₹250</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Maharashtrian Veg Thali', 'Includes puran poli, bhaji, amti, rice, papad, pickle, solkadhi, dessert', '₹250', 'Images/thali3.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -72,12 +92,22 @@
           <!-- Card 2 -->
           <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
             <div class="card menu-card h-100">
-              <img src="Images/thali.jpg"
-                alt="Classic Maharashtrian Thali">
-              <div class="card-body">
-                <h5 class="card-title">Classic Maharashtrian Thali</h5>
-                <p class="card-text">Traditional Maharashtrian flavors served with a modern, elegant twist.</p>
-                <p class="price">₹320</p>
+              <img src="Images/thali.jpg" alt="Classic Maharashtrian Thali">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Classic Maharashtrian Thali</h5>
+                  <p class="card-text">Traditional Maharashtrian flavors served
+                    with a modern, elegant twist.</p>
+                  <p class="price">₹320</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Classic Maharashtrian Thali', 'Traditional Maharashtrian flavors served with a modern, elegant twist.', '₹320', 'Images/thali.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -85,12 +115,22 @@
           <!-- Card 3 -->
           <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
             <div class="card menu-card h-100">
-              <img src="Images/thali2.jpg"
-                alt="Simple Maharashtrian Thali">
-              <div class="card-body">
-                <h5 class="card-title">Simple Maharashtrian Thali</h5>
-                <p class="card-text">Everyday comfort with bhaji, dal, rice, roti, chutneys and sides.</p>
-                <p class="price">₹180</p>
+              <img src="Images/thali2.jpg" alt="Simple Maharashtrian Thali">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Simple Maharashtrian Thali</h5>
+                  <p class="card-text">Everyday comfort with bhaji, dal, rice,
+                    roti, chutneys and sides.</p>
+                  <p class="price">₹180</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Simple Maharashtrian Thali', 'Everyday comfort with bhaji, dal, rice, roti, chutneys and sides.', '₹180', 'Images/thali2.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -100,10 +140,21 @@
             <div class="card menu-card h-100">
               <img src="Images/Gallery_images/Maharashtrian/kothimbir.jpg"
                 alt="Kothimbir Vadi">
-              <div class="card-body">
-                <h5 class="card-title">Kothimbir Vadi</h5>
-                <p class="card-text">Steamed and shallow-fried spiced coriander fritters.</p>
-                <p class="price">₹120</p>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Kothimbir Vadi</h5>
+                  <p class="card-text">Steamed and shallow-fried spiced
+                    coriander fritters.</p>
+                  <p class="price">₹120</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Kothimbir Vadi', 'Steamed and shallow-fried spiced coriander fritters.', '₹120', 'Images/Gallery_images/Maharashtrian/kothimbir.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -112,357 +163,622 @@
           <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
             <div class="card menu-card h-100">
               <img src="Images/Gallery_images/Maharashtrian/missle pav.jpg"
-                alt="misal_pav">
-              <div class="card-body">
-                <h5 class="card-title">Misal Pav</h5>
-                <p class="card-text">Spicy sprouted curry topped with farsan, served with pav.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/poha.jpg"
-                alt="Poha">
-              <div class="card-body">
-                <h5 class="card-title">Poha</h5>
-                <p class="card-text">Fluffy poha with onions, potatoes, peanuts, and a gourmet garnish.</p>
-                <p class="price">₹90</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <section class="menu-section">
-      <h2 class="menu-title" data-aos="zoom-in" data-aos-duration="1000">South
-        Indian</h2>
-
-      <div class="container">
-        <div class="row g-4">
-
-          <!-- Card 1 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="card menu-card h-100">
-              <img src="Images/Gallery_images/South_indian/dosa2.jpg"
-                alt="Masala Dosa">
-              <div class="card-body">
-                <h5 class="card-title">Masala Dosa</h5>
-                <p class="card-text">Crispy dosa filled with spicy potato masala
-                  and served with chutney & sambar.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Gallery_images/South_indian/south indian.jpg"
-                alt="Uttapam">
-              <div class="card-body">
-                <h5 class="card-title">Vegetable Uttapam</h5>
-                <p class="card-text">Thick dosa topped with onions, tomatoes,
-                  green chillies & coriander.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/idli.jpg"
-                alt="Idli Sambar">
-              <div class="card-body">
-                <h5 class="card-title">Idli Sambar</h5>
-                <p class="card-text">Steamed rice cakes with hot sambar and
-                  coconut chutney.</p>
-                <p class="price">₹100</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Gallery_images/South_indian/south_indian2.jpg"
-                alt="Mini_Uttapam">
-              <div class="card-body">
-                <h5 class="card-title">Mini Uttapam Platter</h5>
-                <p class="card-text">Soft, bite-sized uttapams topped with veggies, served with chutneys and sambar.</p>
-                <p class="price">₹140</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/medu_vada.jpg"
-                alt="Medu Vada">
-              <div class="card-body">
-                <h5 class="card-title">Medu Vada</h5>
-                <p class="card-text">Crispy golden lentil fritters, served with coconut chutney and hot sambar.</p>
-                <p class="price">₹110</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/upma.jpg"
-                alt="Upma">
-              <div class="card-body">
-                <h5 class="card-title">Upma</h5>
-                <p class="card-text">Simple and comforting semolina cooked with spices and vegetables, with chutney.</p>
-                <p class="price">₹90</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="menu-section">
-      <h2 class="menu-title" data-aos="zoom-in" data-aos-duration="1000">Chinese</h2>
-
-      <div class="container">
-        <div class="row g-4">
-
-          <!-- Card 1 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/spicy-noodle-6902956_640.jpg"
-                alt="noodles">
-              <div class="card-body">
-                <h5 class="card-title">Hakka Noodles</h5>
-                <p class="card-text">Wok-tossed noodles with veggies or chicken in a spicy soy-garlic sauce.</p>
-                <p class="price">₹150</p>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <!-- Card 2 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Gallery_images/Chainese/noodles3.png"
-                alt="noodles">
-              <div class="card-body">
-                <h5 class="card-title">Noodles</h5>
-                <p class="card-text">Stir-fried noodles tossed with mixed vegetables, garlic, and light soy sauce.</p>
-                <p class="price">₹140</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/Manchurian2 .jpg"
-                alt="Manchurian">
-              <div class="card-body">
-                <h5 class="card-title">Manchurian(Dry)</h5>
-                <p class="card-text">Crispy balls tossed in a spicy garlic-soy sauce, served dry or with gravy.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/gravy_manchu.jpg"
-                alt="Manchurian gravy">
-              <div class="card-body">
-                <h5 class="card-title">Manchurian(Gravy)</h5>
-                <balls class="card-text">Crispy vegetable balls simmered in a tangy soy-garlic gravy.</p>
-                <p class="price">₹150</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/Manchurian .jpg"
-                alt="Manchurian with noodels">
-              <div class="card-body">
-                <h5 class="card-title">Manchurian with Noodles</h5>
-                <p class="card-text">Crispy vegetable balls simmered in a tangy soy-garlic gravy.</p>
-                <p class="price">₹220</p>
-              </div>
-            </div>
-                <p class="card-text">
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/rice.jpg"
-                alt="rice">
-              <div class="card-body">
-                <h5 class="card-title">Fried Rice</h5>
-                <p class="card-text">Wok-tossed rice with vegetables or chicken, flavored with soy sauce and spring onions.</p>
-                <p class="price">₹140</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-      <section class="menu-section">
-      <h2 class="menu-title" data-aos="zoom-in" data-aos-duration="1000">Punjabi</h2>
-
-      <div class="container">
-        <div class="row g-4">
-
-          <!-- Card 1 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/aaloo_paratha.jpg"
-                alt="aaloo_paratha">
-              <div class="card-body">
-                <h5 class="card-title">Aloo Paratha, Curd & Pickle</h5>
-                <p class="card-text">Spiced mashed potato-stuffed flatbread, served hot with curd and tangy pickle.</p>
-                <p class="price">₹100</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/chole_bhature.jpg"
-                alt="Chole Bhature">
-              <div class="card-body">
-                <h5 class="card-title">Chole Bhature</h5>
-                <p class="card-text">Fluffy deep-fried bhature served with spicy chickpea curry and onion salad.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/kulcha_chole.jpg"
-                alt="Amritsari Kulcha with Chole ">
-              <div class="card-body">
-                <h5 class="card-title">Amritsari Kulcha with Chole </h5>
-                <p class="card-text">Tandoor-baked stuffed bread paired with flavorful chole and chutney.</p>
-                <p class="price">₹140</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Gallery_images/North_indian/north indian2.jpg"
-                alt="Rajma Chawal">
-              <div class="card-body">
-                <h5 class="card-title">Rajma Chawal</h5>
-                <p class="card-text">Red kidney beans cooked in a thick gravy, served over steamed basmati rice.</p>
-                <p class="price">₹120</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/food7.jpg"
-                alt="Dal Makhani Roti Plate">
-              <div class="card-body">
-                <h5 class="card-title">Dal Makhani Roti Plate</h5>
-                <p class="card-text">Creamy black lentils slow-cooked with butter and mild spices, served with roti.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/paneer tikka wiht roti.jpg"
-                alt="paneer">
-              <div class="card-body">
-                <h5 class="card-title">Paneer Tikka & Tandoori Roti</h5>
-                <p class="card-text">Marinated cottage cheese cubes grilled to perfection, served with mint chutney.</p>
-                <p class="price">₹130</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="menu-section">
-      <h2 class="menu-title" data-aos="zoom-in" data-aos-duration="1000">Sweets/Desserts</h2>
-
-      <div class="container">
-        <div class="row g-4">
-
-           <!-- Card 1 -->
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/shahi_tukda.jpg"
-                alt="shahi_tukda">
-              <div class="card-body">
-                <h5 class="card-title">Shahi Tukda</h5>
-                <p class="card-text">Saffron cardamom milk-soaked bread topped with dry fruits.</p>
-                <p class="price">₹180</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/shrik.jpg"
-                alt="Shrikhand Symphony	Saffron">
-              <div class="card-body">
-                <h5 class="card-title">Shrikhand Symphony	Saffron</h5>
-                <p class="card-text">Creamy saffron-flavored yogurt dessert with a rich, traditional taste.</p>
-                <p class="price">₹110</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-            <div class="card menu-card h-100">
-              <img src="Images/Menu_images/lasssi.jpg"
-                alt="Lassi Creme Brulee">
-              <div class="card-body">
-                <h5 class="card-title">Lassi Creme Brulee</h5>
-                <p class="card-text">Fusion dessert combining creamy lassi flavors with a caramelized sugar crust.</p>
-                <div class="clearfix">
-                  <p class="price float-start">₹220</p>
-                  <a href="" class="btn btn-book mt-3 float-end">Order Now</a>
+                alt="Misal Pav">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Misal Pav</h5>
+                  <p class="card-text">Spicy sprouted curry topped with farsan,
+                    served with pav.</p>
+                  <p class="price">₹130</p>
                 </div>
-                
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Misal Pav', 'Spicy sprouted curry topped with farsan, served with pav.', '₹130', 'Images/Gallery_images/Maharashtrian/missle pav.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+            <div class="card menu-card h-100">
+              <img src="Images/Menu_images/poha.jpg" alt="Poha">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Poha</h5>
+                  <p class="card-text">Fluffy poha with onions, potatoes,
+                    peanuts, and a gourmet garnish.</p>
+                  <p class="price">₹90</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Poha', 'Fluffy poha with onions, potatoes, peanuts, and a gourmet garnish.', '₹90', 'Images/Menu_images/poha.jpg')">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- South indian Section starts -->
+        </section>
+        <section class="menu-section">
+          <h2 class="menu-title" data-aos="zoom-in"
+            data-aos-duration="1000">South
+            Indian</h2>
+
+          <div class="container">
+            <div class="row g-4">
+              <!-- Card 1 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="card menu-card h-100">
+                  <img src="Images/Gallery_images/South_indian/dosa2.jpg"
+                    alt="Masala Dosa">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Masala Dosa</h5>
+                      <p class="card-text">Crispy dosa filled with spicy potato
+                        masala and served with chutney & sambar.</p>
+                      <p class="price">₹130</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Masala Dosa', 'Crispy dosa filled with spicy potato masala and served with chutney & sambar.', '₹130', 'Images/Gallery_images/South_indian/dosa2.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                <div class="card menu-card h-100">
+                  <img src="Images/Gallery_images/South_indian/south indian.jpg"
+                    alt="Uttapam">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Vegetable Uttapam</h5>
+                      <p class="card-text">Thick dosa topped with onions,
+                        tomatoes, green chillies & coriander.</p>
+                      <p class="price">₹130</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Vegetable Uttapam', 'Thick dosa topped with onions, tomatoes, green chillies & coriander.', '₹130', 'Images/Gallery_images/South_indian/south indian.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/idli.jpg" alt="Idli Sambar">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Idli Sambar</h5>
+                      <p class="card-text">Steamed rice cakes with hot sambar
+                        and coconut chutney.</p>
+                      <p class="price">₹100</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Idli Sambar', 'Steamed rice cakes with hot sambar and coconut chutney.', '₹100', 'Images/Menu_images/idli.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                <div class="card menu-card h-100">
+                  <img
+                    src="Images/Gallery_images/South_indian/south_indian2.jpg"
+                    alt="Mini_Uttapam">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Mini Uttapam Platter</h5>
+                      <p class="card-text">Soft, bite-sized uttapams topped with
+                        veggies, served with chutneys and sambar.</p>
+                      <p class="price">₹140</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Mini Uttapam Platter', 'Soft, bite-sized uttapams topped with veggies, served with chutneys and sambar.', '₹140', 'Images/Gallery_images/South_indian/south_indian2.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/medu_vada.jpg" alt="Medu Vada">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Medu Vada</h5>
+                      <p class="card-text">Crispy golden lentil fritters, served
+                        with coconut chutney and hot sambar.</p>
+                      <p class="price">₹110</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Medu Vada', 'Crispy golden lentil fritters, served with coconut chutney and hot sambar.', '₹110', 'Images/Menu_images/medu_vada.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/upma.jpg" alt="Upma">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Upma</h5>
+                      <p class="card-text">Simple and comforting semolina cooked
+                        with spices and vegetables, with chutney.</p>
+                      <p class="price">₹90</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Upma', 'Simple and comforting semolina cooked with spices and vegetables, with chutney.', '₹90', 'Images/Menu_images/upma.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- Chinese Section starts -->
+        <section class="menu-section">
+          <h2 class="menu-title" data-aos="zoom-in"
+            data-aos-duration="1000">Chinese</h2>
+
+          <div class="container">
+            <div class="row g-4">
+
+              <!-- Card 1 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/spicy-noodle-6902956_640.jpg"
+                    alt="noodles">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Hakka Noodles</h5>
+                      <p class="card-text">Wok-tossed noodles with veggies or
+                        chicken in a spicy soy-garlic sauce.</p>
+                      <p class="price">₹150</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Hakka Noodles', 'Wok-tossed noodles with veggies or chicken in a spicy soy-garlic sauce.', '₹150', 'Images/Menu_images/spicy-noodle-6902956_640.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                <div class="card menu-card h-100">
+                  <img src="Images/Gallery_images/Chainese/noodles3.png"
+                    alt="noodles">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Noodles</h5>
+                      <p class="card-text">Stir-fried noodles tossed with mixed
+                        vegetables, garlic, and light soy sauce.</p>
+                      <p class="price">₹140</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Noodles', 'Stir-fried noodles tossed with mixed vegetables, garlic, and light soy sauce.', '₹140', 'Images/Gallery_images/Chainese/noodles3.png')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/Manchurian2 .jpg"
+                    alt="Manchurian">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Manchurian (Dry)</h5>
+                      <p class="card-text">Crispy balls tossed in a spicy
+                        garlic-soy sauce, served dry or with gravy.</p>
+                      <p class="price">₹130</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Manchurian (Dry)', 'Crispy balls tossed in a spicy garlic-soy sauce, served dry or with gravy.', '₹130', 'Images/Menu_images/Manchurian2 .jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/gravy_manchu.jpg"
+                    alt="Manchurian Gravy">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Manchurian (Gravy)</h5>
+                      <p class="card-text">Crispy vegetable balls simmered in a
+                        tangy soy-garlic gravy.</p>
+                      <p class="price">₹150</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Manchurian (Gravy)', 'Crispy vegetable balls simmered in a tangy soy-garlic gravy.', '₹150', 'Images/Menu_images/gravy_manchu.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/Manchurian .jpg"
+                    alt="Manchurian with Noodles">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Manchurian with Noodles</h5>
+                      <p class="card-text">Crispy vegetable balls simmered in a
+                        tangy soy-garlic gravy.</p>
+                      <p class="price">₹220</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Manchurian with Noodles', 'Crispy vegetable balls simmered in a tangy soy-garlic gravy.', '₹220', 'Images/Menu_images/Manchurian .jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="card menu-card h-100">
+                  <img src="Images/Menu_images/rice.jpg" alt="Fried Rice">
+                  <div
+                    class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title">Fried Rice</h5>
+                      <p class="card-text">Wok-tossed rice with vegetables or
+                        chicken, flavored with soy sauce and spring onions.</p>
+                      <p class="price">₹140</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-danger order-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        onclick="openOrderModal('Fried Rice', 'Wok-tossed rice with vegetables or chicken, flavored with soy sauce and spring onions.', '₹140', 'Images/Menu_images/rice.jpg')">
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- Punjabi Section starts -->
+      <section class="menu-section">
+        <h2 class="menu-title" data-aos="zoom-in"
+          data-aos-duration="1000">Punjabi</h2>
+
+        <div class="container">
+          <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/aaloo_paratha.jpg"
+                  alt="Aloo Paratha">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Aloo Paratha, Curd & Pickle</h5>
+                    <p class="card-text">Spiced mashed potato-stuffed flatbread,
+                      served hot with curd and tangy pickle.</p>
+                    <p class="price">₹100</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Aloo Paratha, Curd & Pickle', 'Spiced mashed potato-stuffed flatbread, served hot with curd and tangy pickle.', '₹100', 'Images/Menu_images/aaloo_paratha.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/chole_bhature.jpg"
+                  alt="Chole Bhature">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Chole Bhature</h5>
+                    <p class="card-text">Fluffy deep-fried bhature served with
+                      spicy chickpea curry and onion salad.</p>
+                    <p class="price">₹130</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Chole Bhature', 'Fluffy deep-fried bhature served with spicy chickpea curry and onion salad.', '₹130', 'Images/Menu_images/chole_bhature.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/kulcha_chole.jpg"
+                  alt="Amritsari Kulcha with Chole">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Amritsari Kulcha with Chole</h5>
+                    <p class="card-text">Tandoor-baked stuffed bread paired with
+                      flavorful chole and chutney.</p>
+                    <p class="price">₹140</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Amritsari Kulcha with Chole', 'Tandoor-baked stuffed bread paired with flavorful chole and chutney.', '₹140', 'Images/Menu_images/kulcha_chole.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="card menu-card h-100">
+                <img src="Images/Gallery_images/North_indian/north indian2.jpg"
+                  alt="Rajma Chawal">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Rajma Chawal</h5>
+                    <p class="card-text">Red kidney beans cooked in a thick
+                      gravy, served over steamed basmati rice.</p>
+                    <p class="price">₹120</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Rajma Chawal', 'Red kidney beans cooked in a thick gravy, served over steamed basmati rice.', '₹120', 'Images/Gallery_images/North_indian/north indian2.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+              <div class="card menu-card h-100">
+                <img src="Images/food7.jpg" alt="Dal Makhani Roti Plate">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Dal Makhani Roti Plate</h5>
+                    <p class="card-text">Creamy black lentils slow-cooked with
+                      butter and mild spices, served with roti.</p>
+                    <p class="price">₹130</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Dal Makhani Roti Plate', 'Creamy black lentils slow-cooked with butter and mild spices, served with roti.', '₹130', 'Images/food7.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/paneer tikka wiht roti.jpg"
+                  alt="Paneer Tikka & Tandoori Roti">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Paneer Tikka & Tandoori Roti</h5>
+                    <p class="card-text">Marinated cottage cheese cubes grilled
+                      to perfection, served with mint chutney.</p>
+                    <p class="price">₹130</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Paneer Tikka & Tandoori Roti', 'Marinated cottage cheese cubes grilled to perfection, served with mint chutney.', '₹130', 'Images/Menu_images/paneer tikka wiht roti.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Dessert Section starts -->
+      <section class="menu-section">
+        <h2 class="menu-title" data-aos="zoom-in"
+          data-aos-duration="1000">Sweets/Desserts</h2>
+
+        <div class="container">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/shahi_tukda.jpg" alt="Shahi Tukda">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Shahi Tukda</h5>
+                    <p class="card-text">Saffron cardamom milk-soaked bread
+                      topped with dry fruits.</p>
+                    <p class="price">₹180</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Shahi Tukda', 'Saffron cardamom milk-soaked bread topped with dry fruits.', '₹180', 'Images/Menu_images/shahi_tukda.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/shrik.jpg"
+                  alt="Shrikhand Symphony Saffron">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Shrikhand Symphony Saffron</h5>
+                    <p class="card-text">Creamy saffron-flavored yogurt dessert
+                      with a rich, traditional taste.</p>
+                    <p class="price">₹110</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Shrikhand Symphony Saffron', 'Creamy saffron-flavored yogurt dessert with a rich, traditional taste.', '₹110', 'Images/Menu_images/shrik.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+              <div class="card menu-card h-100">
+                <img src="Images/Menu_images/lasssi.jpg"
+                  alt="Lassi Creme Brulee">
+                <div
+                  class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Lassi Creme Brulee</h5>
+                    <p class="card-text">Fusion dessert combining creamy lassi
+                      flavors with a caramelized sugar crust.</p>
+                    <p class="price">₹220</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-danger order-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderModal"
+                      onclick="openOrderModal('Lassi Creme Brulee', 'Fusion dessert combining creamy lassi flavors with a caramelized sugar crust.', '₹220', 'Images/Menu_images/lasssi.jpg')">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
       </div>
     </section>
-
+    <!-- Beverages Section starts -->
     <section class="menu-section">
-      <h2 class="menu-title" data-aos="zoom-in" data-aos-duration="1000">Beverages</h2>
+      <h2 class="menu-title" data-aos="zoom-in"
+        data-aos-duration="1000">Beverages</h2>
 
       <div class="container">
         <div class="row g-4">
@@ -472,10 +788,21 @@
             <div class="card menu-card h-100">
               <img src="Images/Menu_images/Oreo Chocolate Shake.jpg"
                 alt="Oreo Chocolate Shake">
-              <div class="card-body">
-                <h5 class="card-title">Oreo Chocolate Shake</h5>
-                <p class="card-text">A rich and creamy blend of Oreos, chocolate, and chilled milk.</p>
-                <p class="price">₹150</p>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Oreo Chocolate Shake</h5>
+                  <p class="card-text">A rich and creamy blend of Oreos,
+                    chocolate, and chilled milk.</p>
+                  <p class="price">₹150</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Oreo Chocolate Shake', 'A rich and creamy blend of Oreos, chocolate, and chilled milk.', '₹150', 'Images/Menu_images/Oreo Chocolate Shake.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -483,12 +810,22 @@
           <!-- Card 2 -->
           <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
             <div class="card menu-card h-100">
-              <img src="Images/Menu_images/Cappuccino .jpg"
-                alt="Cappuccino">
-              <div class="card-body">
-                <h5 class="card-title">Classic Cappuccino</h5>
-                <p class="card-text">A smooth espresso topped with steamed milk and frothy foam.</p>
-                <p class="price">₹120</p>
+              <img src="Images/Menu_images/Cappuccino .jpg" alt="Cappuccino">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Classic Cappuccino</h5>
+                  <p class="card-text">A smooth espresso topped with steamed
+                    milk and frothy foam.</p>
+                  <p class="price">₹120</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Classic Cappuccino', 'A smooth espresso topped with steamed milk and frothy foam.', '₹120', 'Images/Menu_images/Cappuccino .jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -498,20 +835,55 @@
             <div class="card menu-card h-100">
               <img src="Images/Menu_images/Strawberry Orange Mocktail.jpg"
                 alt="Strawberry Orange Mocktail">
-              <div class="card-body">
-                <h5 class="card-title">Strawberry Orange Mocktail</h5>
-                <p class="card-text">A refreshing mix of tangy orange and sweet strawberry flavors.</p>
-                <p class="price">₹180</p>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Strawberry Orange Mocktail</h5>
+                  <p class="card-text">A refreshing mix of tangy orange and
+                    sweet strawberry flavors.</p>
+                  <p class="price">₹180</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn btn-danger order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                    onclick="openOrderModal('Strawberry Orange Mocktail', 'A refreshing mix of tangy orange and sweet strawberry flavors.', '₹180', 'Images/Menu_images/Strawberry Orange Mocktail.jpg')">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-           </div>
+        </div>
       </div>
     </section>
-
-     
-
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1"
+      aria-labelledby="orderModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderModalLabel">Order
+              Details</h5>
+            <button type="button" class="btn-close btn-close-white"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage" src alt class="img-fluid mb-3 rounded"
+              style="max-height: 200px;">
+            <h5 id="modalTitle"></h5>
+            <p id="modalDescription"></p>
+            <p id="modalPrice" class="fw-bold"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-warning"
+              onclick="confirmOrder()">Confirm Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer Section Starts-->
     <footer class="footer custom-footer-bg">
@@ -544,9 +916,12 @@
           <div class="col-md-3 mb-4 footer-links">
             <h6 class="text-uppercase fw-bold">Follow Us</h6>
             <ul class="list-unstyled">
-              <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/?flo=true" target="_blank"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i
+                    class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/?flo=true"
+                  target="_blank"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i
+                    class="bi bi-twitter"></i></a></li>
             </ul>
           </div>
 
@@ -558,10 +933,13 @@
             </p>
             <div class="mt-3">
               <h6 class="text-uppercase fw-bold">Find Us</h6>
-              <a href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur"
+              <a
+                href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur"
                 target="_blank"
                 class="map-link">
-                <i class="bi bi-geo-alt-fill icon-gold"></i> View on Google Maps
+                <i class="bi bi-geo-alt-fill icon-gold"></i> View on
+                Google
+                Maps
               </a>
             </div>
           </div>
@@ -581,7 +959,8 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-dark text-light">
           <div class="modal-header border-0">
-            <h5 class="modal-title text-warning" id="bookingModalLabel">Reserve
+            <h5 class="modal-title text-warning"
+              id="bookingModalLabel">Reserve
               Your Table</h5>
             <button type="button" class="btn-close btn-close-white"
               data-bs-dismiss="modal" aria-label="Close"></button>
@@ -607,19 +986,23 @@
               </div>
 
               <div class="mb-3">
-                <label for="guests" class="form-label">No. of Guests</label>
-                <input type="number" class="form-control" id="guests" min="1"
+                <label for="guests" class="form-label">No. of
+                  Guests</label>
+                <input type="number" class="form-control" id="guests"
+                  min="1"
                   placeholder="e.g. 4" required>
               </div>
 
               <div class="mb-3">
                 <label for="date" class="form-label">Date</label>
-                <input type="date" class="form-control" id="date" required>
+                <input type="date" class="form-control" id="date"
+                  required>
               </div>
 
               <div class="mb-3">
                 <label for="time" class="form-label">Time</label>
-                <input type="time" class="form-control" id="time" required>
+                <input type="time" class="form-control" id="time"
+                  required>
               </div>
             </div>
 
@@ -633,27 +1016,15 @@
         </div>
       </div>
     </div>
-    <!-- Book a table sucessfull alert Js -->
-    <script>
-  document.getElementById("reservationForm").addEventListener("submit", function (e) {
-    e.preventDefault(); 
-    document.getElementById("successAlert").classList.remove("d-none");
-    this.reset();
-    
-    setTimeout(() => {
-      document.getElementById("successAlert").classList.add("d-none");
-      const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
-      modal.hide();
-    }, 2000);
-  });
-</script>
+    <script src="JS/menu.js"></script>
 
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
   AOS.init({
     offset: 100,
