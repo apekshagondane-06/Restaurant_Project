@@ -87,16 +87,16 @@
 
             <!-- Map -->
             <div class="mt-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18..."
-                width="100%" height="250" style="border:0; border-radius: 10px;"
-                allowfullscreen loading="lazy"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238130.15440691105!2d78.90769835448079!3d21.16100605022737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1753636407072!5m2!1sen!2sin"
+                width=100% height="250" style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-
-          <!-- Right Form -->
           <div class="col-lg-7" data-aos="fade-left">
             <h4 class="text-warning mb-4">Send a Message</h4>
-            <form>
+            <form id="contactForm" onsubmit="return showToast(event)">
               <div class="mb-3">
                 <label for="name" class="form-label text-light">Your
                   Name</label>
@@ -112,11 +112,11 @@
                   id="email" required>
               </div>
               <div class="mb-3">
-                <label for="subject"
-                  class="form-label text-light">Subject</label>
-                <input type="text"
+                <label for="number" class="form-label text-light">Phone
+                  Number</label>
+                <input type="number"
                   class="form-control bg-dark text-light border-warning"
-                  id="subject" required>
+                  id="number" required>
               </div>
               <div class="mb-3">
                 <label for="message"
@@ -128,6 +128,48 @@
                 Message</button>
             </form>
           </div>
+
+          <!--  alert at Top Center -->
+          <div id="toastContainer"
+            class="toast-container position-fixed start-50 translate-middle-x"
+            style="top: 20px; z-index: 1055;">
+            <div id="formToast"
+              class="toast align-items-center text-bg-secondary border-0 shadow"
+              role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                   &#9989; Thank you! Your message has been sent successfully.
+                </div>
+                <button type="button"
+                  class="btn-close btn-close-white me-2 m-auto"
+                  data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+
+          <script>
+  function showToast(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const number = document.getElementById("number").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !number || !message) {
+      alert("⚠️ Please fill out all fields!");
+      return false;
+    }
+
+    const toastElement = document.getElementById("formToast");
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
+
+    document.getElementById("contactForm").reset();
+    return false;
+  }
+</script>
+
         </div>
       </div>
     </section>
@@ -163,9 +205,12 @@
           <div class="col-md-3 mb-4 footer-links">
             <h6 class="text-uppercase fw-bold">Follow Us</h6>
             <ul class="list-unstyled">
-              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i
+                    class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/?flo=true" target="_blank"><i
+                    class="bi bi-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i
+                    class="bi bi-twitter"></i></a></li>
             </ul>
           </div>
 
