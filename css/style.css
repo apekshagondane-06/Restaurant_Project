@@ -434,7 +434,7 @@ body {
   }
  .first-contact {
       position: relative;
-      background: url('/Images/restaurant6.jpg') center center/cover no-repeat;
+      background: url('/Images/restro3.jpg') center center/cover no-repeat;
       height: 60vh;
       display: flex;
       align-items: center;
@@ -469,8 +469,8 @@ body {
     }
 
     .contact-section {
-      background-color: #121212;
-      color: white;
+      background-color: white;
+      color: black;
     }
 
  
