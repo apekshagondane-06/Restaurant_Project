@@ -109,7 +109,7 @@ body {
 .image-box-rotate img {
   width: 100%;
   border-radius: 10px;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
   transform-style: preserve-3d;
 }
 .testimonial-card {
