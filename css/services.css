@@ -44,6 +44,10 @@
 .nav-link:hover::after {
   width: 100%;
 }
+.nav-link.active {
+    color: #ffcc00 !important;
+    border-bottom: 2px solid #ffcc00;
+  }
 
 
 
@@ -215,4 +219,7 @@ body {
   .footer {
     text-align: center;
   }
+}
+ html, body {
+  overflow-x: hidden;
 }

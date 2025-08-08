@@ -44,7 +44,10 @@
 .nav-link:hover::after {
   width: 100%;
 }
-
+.nav-link.active {
+    color: #ffcc00 !important;
+    border-bottom: 2px solid #ffcc00;
+  }
 
 /* Book a Table Button */
 .btn-book {
@@ -310,4 +313,7 @@ body {
 }
 .left {
   transform: rotateY(-90deg) translateZ(200px);
+}
+ html, body {
+  overflow-x: hidden;
 }

@@ -17,48 +17,49 @@
   <body>
 
     <!-- Navbar -->
-    <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="Images/restaurant.png" alt="Bootstrap" width="30"
-              height="24">
-            The Thali Yard
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Images/restaurant.png" alt="Bootstrap" width="30" height="24">
+        The Thali Yard
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-light fs-3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <li class="nav-item">
+          <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
+            data-bs-toggle="modal" data-bs-target="#bookingModal">
+            Book a Table
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars text-light fs-3"></i>
-          </button>
+        </li>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Navbar Section Ends -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active"
-                  href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">About
-                  Us</a></li>
-              <li class="nav-item"><a class="nav-link"
-                  href="gallery.html">Gallery</a></li>
-              <li class="nav-item"><a class="nav-link"
-                  href="menu.html">Menu</a></li>
-              <li class="nav-item"><a class="nav-link"
-                  href="services.html">Services</a></li>
-              <li class="nav-item"><a class="nav-link"
-                  href="contact.html">Contact Us</a></li>
-            </ul>
-            <li class="nav-item">
-              <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#bookingModal">
-                Book a Table
-              </a>
-            </li>
-          </div>
-        </div>
-      </nav>
-    </header>
-
+<!-- Script: Active page highlight -->
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
     <!-- main starts -->
     <main>
       <section class="text-center" style="background: #232222; color: white;">
@@ -256,13 +257,17 @@
           <!-- Address -->
           <div class="col-md-3 mb-4">
             <h6 class="text-uppercase fw-bold">Address</h6>
-            <p>
+             <p>
               The Thali Yard, <br>
               Near Food Street, Nagpur,<br>
               MH - 440001<br>
             </p>
-            &#128222; +91-9876543210<br>
-            ✉️ info@thethaliyard.com
+            <a href="tel:9876543210" >
+               &#128222;+91-9876543210<br>
+            </a>
+             <a href="mailto:someone@example.com">
+               ✉️ info@thethaliyard.com<br>
+            </a>
           </div>
 
           <!-- Quick Links -->
