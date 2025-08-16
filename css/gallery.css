@@ -27,6 +27,22 @@
   filter: brightness(1.05); /* Slight brightness boost */
 }
 
+.image-text-container {
+  position: relative;
+  display: inline-block;
+}
+
+.transparent-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);         
+  opacity: .55;         /* Transparency level */
+  font-size: 44px;
+  font-weight: bold;
+}
+
 /* Footer Styling */
 .footer {
   background: linear-gradient(to right, #1a1a1a, #2c2c2c);
