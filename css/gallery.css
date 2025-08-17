@@ -37,8 +37,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);         
-  opacity: .55;         /* Transparency level */
+  color: white;        
+  opacity: .5;         /* Transparency level */
   font-size: 44px;
   font-weight: bold;
 }
