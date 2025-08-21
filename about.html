@@ -14,88 +14,106 @@
   </head>
   <body>
     <!-- Navbar -->
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Images/restaurant.png" alt="Bootstrap" width="30" height="24">
-        The Thali Yard
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars text-light fs-3"></i>
-      </button>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-black">
+        <div class="container-fluid">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <li class="nav-item">
-          <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
-            data-bs-toggle="modal" data-bs-target="#bookingModal">
-            Book a Table
+          <!-- Brand/Logo -->
+          <a class="navbar-brand fw-bold text-warning" href="#">
+            <img src="Images/restaurant.png" alt="Logo" width="30" height="24"
+              class="me-2">
+            The Thali Yard
           </a>
-        </li>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- Navbar Section Ends -->
 
-<!-- Script: Active page highlight -->
-<script>
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll('.nav-link').forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
+          <!-- Toggler (Mobile Menu) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light fs-3"></i>
+          </button>
 
-  <section class="py-5" style="background: #232222; color: white; overflow-x: hidden;">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-heading text-warning">About Us</h2>
-      <p class="lead"><b>More than food – it’s a flavorful journey of tradition and togetherness.</b></p>
-    </div>
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <div class="row align-items-center">
+            <!-- Center Menu -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link"
+                  href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
 
-      <!-- 3D Cube -->
-       <div class="col-md-6 mb-5 mt-5">
-        <div class="scene">
-          <div class="cube" id="cube">
-            <div class="face front"><img src="Images/res2.jpg" alt="Image 1" class="img-fluid rounded"></div>
-            <div class="face right"><img src="Images/res3.jpg" alt="Image 2" class="img-fluid rounded"></div>
-            <div class="face back"><img src="Images/foodie3.jpg" alt="Image 3" class="img-fluid rounded"></div>
-            <div class="face left"><img src="Images/restro2.jpeg" alt="Image 4" class="img-fluid rounded"></div>
+            <!-- Right Button -->
+            <a class="btn btn-book px-3 rounded-pill" href="#"
+              data-bs-toggle="modal" data-bs-target="#bookingModal">
+              Book a Table
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Section Ends -->
+
+    <!-- About section starts -->
+    <section class="py-5"
+      style="background: #232222; color: white; overflow-x: hidden;">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-heading text-warning">About Us</h2>
+          <p class="lead"><b>More than food – it’s a flavorful journey of
+              tradition and togetherness.</b></p>
+        </div>
+
+        <div class="row align-items-center">
+
+          <!-- 3D Cube -->
+          <div class="col-md-6 mb-5 mt-5">
+            <div class="scene">
+              <div class="cube" id="cube">
+                <div class="face front"><img src="Images/res2.jpg" alt="Image 1"
+                    class="img-fluid rounded"></div>
+                <div class="face right"><img src="Images/res3.jpg" alt="Image 2"
+                    class="img-fluid rounded"></div>
+                <div class="face back"><img src="Images/foodie3.jpg"
+                    alt="Image 3" class="img-fluid rounded"></div>
+                <div class="face left"><img src="Images/restro2.jpeg"
+                    alt="Image 4" class="img-fluid rounded"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Us Text -->
+          <div class="col-md-6 justify-text ps-md-5">
+            <p>The Thali Yard was founded in 2021 with a single mission — to
+              revive the charm of traditional Indian meals and
+              serve them in a way that feels like home. We believe food is not
+              just nourishment, but an experience that connects
+              people, evokes emotions, and celebrates heritage.</p>
+
+            <p>Inspired by the diverse flavors of India, our thalis bring
+              together regional delicacies on one plate—balanced,
+              wholesome, and made with love. From Maharashtrian spice to South
+              Indian comfort, every thali reflects authenticity
+              and attention to detail.</p>
+
+            <p>Our restaurant is not just a place to eat — it's a space where
+              families gather, memories are made, and food is
+              served with a smile. Whether you dine in, take out, or book us for
+              an event, we promise quality, taste, and warmth
+              in every bite.</p>
           </div>
         </div>
       </div>
-
-      <!-- About Us Text -->
-      <div class="col-md-6 justify-text ps-md-5">
-        <p>The Thali Yard was founded in 2021 with a single mission — to revive the charm of traditional Indian meals and
-          serve them in a way that feels like home. We believe food is not just nourishment, but an experience that connects
-          people, evokes emotions, and celebrates heritage.</p>
-      
-        <p>Inspired by the diverse flavors of India, our thalis bring together regional delicacies on one plate—balanced,
-          wholesome, and made with love. From Maharashtrian spice to South Indian comfort, every thali reflects authenticity
-          and attention to detail.</p>
-      
-        <p>Our restaurant is not just a place to eat — it's a space where families gather, memories are made, and food is
-          served with a smile. Whether you dine in, take out, or book us for an event, we promise quality, taste, and warmth
-          in every bite.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Customer Testimonials -->
     <section class="py-5 text-light"
@@ -223,55 +241,61 @@
     <section class="py-5 text-light" style="background: #232222; color: white;">
       <div class="container">
         <h2 class="text-center text-warning mb-5 mt-3">Why Choose Us</h2>
-        <div class="row align-items-center">
+        <div class="row align-items-stretch g-4">
 
           <!-- Image -->
-          <div class="col-md-6 text-center">
-            <img src="Images/restro1.jpg"
-              class="img-fluid rounded-4 shadow border border-light"
-              alt="Traditional Thali"
-              style="max-height: 500px;">
+          <div class="col-md-6 d-flex">
+            <div class="w-100 h-100">
+              <img src="Images/restro1.jpg"
+                class="img-fluid rounded-4 shadow border border-light h-100 w-100"
+                alt="Traditional Thali"
+                style="object-fit: cover;">
+            </div>
           </div>
 
           <!-- Feature List -->
-          <div class="col-md-6">
-            <div class="p-4  rounded-4" style="background: #444242">
-              <ul class="list-unstyled">
-                <li class="d-flex align-items-start mb-3 why-us-point">
+          <div class="col-md-6 d-flex">
+            <div class="p-4 rounded-4 shadow w-100 h-100"
+              style="background: #444242;">
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
-                  <span>Home-style recipes passed down through generations.</span>
+                  <span>Home-style recipes passed down through
+                    generations.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
                   <span>Fresh, locally sourced vegetables and grains.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
                   <span>Custom thali options for personal preferences.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
                   <span>Friendly staff and cozy ambience.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
                   <span>Affordable pricing without compromising quality.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
                   <span>Clean and hygienic kitchen practices.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-3">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
                   <span>Fast service for takeaway and online orders.</span>
                 </li>
-                <li class="d-flex align-items-start mb-3 why-us-point">
+                <li class="d-flex align-items-start mb-0">
                   <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
-                  <span>Special arrangements for functions and bulk bookings.</span>
+                  <span>Special arrangements for functions and bulk
+                    bookings.</span>
                 </li>
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -283,16 +307,16 @@
           <!-- Address -->
           <div class="col-md-3 mb-4">
             <h6 class="text-uppercase fw-bold">Address</h6>
-           <p>
+            <p>
               The Thali Yard, <br>
               Near Food Street, Nagpur,<br>
               MH - 440001<br>
             </p>
-            <a href="tel:9876543210" >
-               &#128222;+91-9876543210<br>
+            <a href="tel:9876543210">
+              &#128222;+91-9876543210<br>
             </a>
-             <a href="mailto:someone@example.com">
-               ✉️ info@thethaliyard.com<br>
+            <a href="mailto:someone@example.com">
+              ✉️ info@thethaliyard.com<br>
             </a>
           </div>
           <!-- Quick Links -->
@@ -306,14 +330,16 @@
             </ul>
           </div>
 
-          
           <!-- Follow Us -->
           <div class="col-md-3 mb-4 footer-links">
             <h6 class="text-uppercase fw-bold">Follow Us</h6>
             <ul class="list-unstyled">
-              <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/?flo=true"target="_blank"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i
+                    class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/?flo=true"
+                  target="_blank"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i
+                    class="bi bi-twitter"></i></a></li>
             </ul>
           </div>
 
@@ -322,7 +348,7 @@
             <h6 class="text-uppercase fw-bold">Opening Hours</h6>
             <p>
               Mon - Sun: 11:00 AM - 11:00 PM<br>
-             
+
             </p>
             <div class="mt-3">
               <h6 class="text-uppercase fw-bold">Find Us</h6>
@@ -341,7 +367,7 @@
       </div>
     </footer>
     <!-- Footer section Ends -->
-     <!-- Booking Modal -->
+    <!-- Booking Modal -->
     <div class="modal fade" id="bookingModal" tabindex="-1"
       aria-labelledby="bookingModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -400,8 +426,9 @@
       </div>
     </div>
     <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="JS/about.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="JS/about.js"></script>
 
   </body>
 </html>

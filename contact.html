@@ -14,42 +14,57 @@
   </head>
   <body>
     <!-- Navbar -->
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Images/restaurant.png" alt="Bootstrap" width="30" height="24">
-        The Thali Yard
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars text-light fs-3"></i>
-      </button>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-black">
+        <div class="container-fluid">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <li class="nav-item">
-          <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
-            data-bs-toggle="modal" data-bs-target="#bookingModal">
-            Book a Table
+          <!-- Brand/Logo -->
+          <a class="navbar-brand fw-bold text-warning" href="#">
+            <img src="Images/restaurant.png" alt="Logo" width="30" height="24"
+              class="me-2">
+            The Thali Yard
           </a>
-        </li>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- Navbar Section Ends -->
 
-<!-- Script: Active page highlight -->
-<script>
+          <!-- Toggler (Mobile Menu) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light fs-3"></i>
+          </button>
+
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Center Menu -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link"
+                  href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Right Button -->
+            <a class="btn btn-book px-3 rounded-pill" href="#"
+              data-bs-toggle="modal" data-bs-target="#bookingModal">
+              Book a Table
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Section Ends -->
+
+    <!-- Script: Active page highlight -->
+    <script>
   const currentPage = window.location.pathname.split("/").pop();
   document.querySelectorAll('.nav-link').forEach(link => {
     if (link.getAttribute("href") === currentPage) {
@@ -79,19 +94,22 @@
             <p><i class="bi bi-geo-alt-fill text-warning"></i>
               <strong>Address:</strong> The Thali Yard, Near Food Street,
               Nagpur- 440001</p>
-            <a href="tel:9876543210 text-dark" >
-               &#128222;+91-9876543210<br>
+            <a href="tel:9876543210 text-dark">
+              &#128222;+91-9876543210<br>
             </a>
-             <a href="mailto:someone@example.com">
-               ✉️ info@thethaliyard.com<br>
+            <a href="mailto:someone@example.com">
+              ✉️ info@thethaliyard.com<br>
             </a>
             <p><i class="bi bi-clock-fill text-warning"></i>
-             Mon-Sun: 11:00 AM – 11:00 PM</p>
+              Mon-Sun: 11:00 AM – 11:00 PM</p>
 
             <!-- Map -->
             <div class="mt-4">
               <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29770.295658276806!2d79.04462151083983!3d21.1409755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0c011f8b8d1%3A0x6c00400b26effa49!2sNaivedhyam%20Restaurant!5e0!3m2!1sen!2sin!4v1754657744048!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29770.295658276806!2d79.04462151083983!3d21.1409755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0c011f8b8d1%3A0x6c00400b26effa49!2sNaivedhyam%20Restaurant!5e0!3m2!1sen!2sin!4v1754657744048!5m2!1sen!2sin"
+                width="100%" height="250" style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
@@ -186,11 +204,11 @@
               Near Food Street, Nagpur,<br>
               MH - 440001<br>
             </p>
-            <a href="tel:9876543210" >
-               &#128222;+91-9876543210<br>
+            <a href="tel:9876543210">
+              &#128222;+91-9876543210<br>
             </a>
-             <a href="mailto:someone@example.com">
-               ✉️ info@thethaliyard.com<br>
+            <a href="mailto:someone@example.com">
+              ✉️ info@thethaliyard.com<br>
             </a>
           </div>
 

@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
-    <link href="css/bootstrap_min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="css/services.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-<!-- Navbar -->
-<header>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Images/restaurant.png" alt="Bootstrap" width="30" height="24">
-        The Thali Yard
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars text-light fs-3"></i>
-      </button>
+    <link href="css/bootstrap_min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <link href="css/services.css" rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-black">
+        <div class="container-fluid">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <li class="nav-item">
-          <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
-            data-bs-toggle="modal" data-bs-target="#bookingModal">
-            Book a Table
+          <!-- Logo -->
+          <a class="navbar-brand fw-bold text-warning" href="#">
+            <img src="Images/restaurant.png" alt="Logo" width="30" height="24"
+              class="me-2">
+            The Thali Yard
           </a>
-        </li>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- Navbar Section Ends -->
 
-<!-- Script: Active page highlight -->
-<script>
+          <!-- Toggler (Mobile Menu) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light fs-3"></i>
+          </button>
+
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Center Menu -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link"
+                  href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About
+                  Us</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Right Button -->
+            <a class="btn btn-book px-3 rounded-pill" href="#"
+              data-bs-toggle="modal" data-bs-target="#bookingModal">
+              Book a Table
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Section Ends -->
+
+    <!-- Script: Active page highlight -->
+    <script>
   const currentPage = window.location.pathname.split("/").pop();
   document.querySelectorAll('.nav-link').forEach(link => {
     if (link.getAttribute("href") === currentPage) {
@@ -54,178 +72,207 @@
     }
   });
 </script>
-    
-<!-- Services Content Section -->
-<section class="py-5" style="background: #232222; color: white;">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title text-uppercase">Our Services</h2>
-      <p class="lead">Explore our diverse range of offerings designed to give you the perfect blend of taste and
-        tradition.</p>
-    </div>
 
-  <!-- Row 1 -->
-  <div class="row align-items-center mb-5">
-    <!-- Dine-In -->
-    <div class="col-md-3">
-      <img src="Images/foodie.jpg" alt="Fine Dining Experience" class="img-fluid rounded  service-img">
-    </div>
-  <div class="col-md-3">
-    <h5 class="service-heading">Dine-In Experience</h5>
-    <p class="text-light justify-text">
-      Enjoy authentic thalis served fresh in a warm, welcoming ambiance that blends tradition and modern comfort for
-      families, friends, or solo meals. Our dine-in spaces are designed to make every meal a memorable occasion-with 
-      courteous service, cozy seating, and a truly home. Every box is curated with care, maintaining taste. Our efficient 
-      counter ensures minimal wait time.
-    </p>
-  </div>
+    <!-- Services Content Section -->
+    <section class="py-5" style="background: #232222; color: white;">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title text-uppercase">Our Services</h2>
+          <p class="lead">Explore our diverse range of offerings designed to
+            give you the perfect blend of taste and
+            tradition.</p>
+        </div>
 
-  <!-- Takeaway -->
-  <div class="col-md-3">
-    <img src="Images/foodie6.jpeg" alt="Takeaway" class="img-fluid rounded  service-img">
-  </div>
-  <div class="col-md-3">
-    <h5 class="service-heading">Takeaway Delight</h5>
-    <p class="text-light justify-text">
-      Short on time? Grab your thali on-the-go. Hygienically packed and sealed fresh, our takeaway option is perfect for
-      busy lifestyles. Whether it's lunch at work, a quick dinner, or a snack during travel, we ensure your food remains 
-      delicious. Every box is curated with care, maintaining taste and texture even after transit. Our efficient counter 
-      ensures minimal wait time and maximum.
-    </p>
-  </div>
-  </div>
+        <!-- Row 1 -->
+        <div class="row align-items-center mb-5">
+          <!-- Dine-In -->
+          <div class="col-md-3">
+            <img src="Images/foodie.jpg" alt="Fine Dining Experience"
+              class="img-fluid rounded  service-img">
+          </div>
+          <div class="col-md-3">
+            <h5 class="service-heading">Dine-In Experience</h5>
+            <p class="text-light justify-text">
+              Enjoy authentic thalis served fresh in a warm, welcoming ambiance
+              that blends tradition and modern comfort for
+              families, friends, or solo meals. Our dine-in spaces are designed
+              to make every meal a memorable occasion-with
+              courteous service, cozy seating, and a truly home. Every box is
+              curated with care, maintaining taste. Our efficient
+              counter ensures minimal wait time.
+            </p>
+          </div>
 
-  <!-- Row 2 -->
-  <div class="row align-items-center mb-5">
-    <!-- Catering -->
-    <div class="col-md-3">
-      <img src="images/foodiee1.jpg" alt="Catering Service" class="img-fluid rounded  service-img">
-    </div>
-    <div class="col-md-3">
-      <h5 class="service-heading">Catering Services</h5>
-      <p class="text-light justify-text">
-        Let us serve your guests at weddings, parties, or business events with custom thali menus and professional,
-        on-time catering. From intimate family functions to large-scale corporate gatherings, we deliver exceptional 
-        flavors and seamless. Our catering team works with you to design tailored menus that suit the theme and mood 
-        of your event. Enjoy hassle-free arrangements with setup.
-      </p>
-    </div>
+          <!-- Takeaway -->
+          <div class="col-md-3">
+            <img src="Images/foodie6.jpeg" alt="Takeaway"
+              class="img-fluid rounded  service-img">
+          </div>
+          <div class="col-md-3">
+            <h5 class="service-heading">Takeaway Delight</h5>
+            <p class="text-light justify-text">
+              Short on time? Grab your thali on-the-go. Hygienically packed and
+              sealed fresh, our takeaway option is perfect for
+              busy lifestyles. Whether it's lunch at work, a quick dinner, or a
+              snack during travel, we ensure your food remains
+              delicious. Every box is curated with care, maintaining taste and
+              texture even after transit. Our efficient counter
+              ensures minimal wait time and maximum.
+            </p>
+          </div>
+        </div>
 
-    <!-- Online Order -->
-    <div class="col-md-3">
-      <img src="Images/foodie2.jpg" alt="Online Order" class="img-fluid rounded service-img">
-    </div>
-    <div class="col-md-3">
-      <h5 class="service-heading">Online Ordering</h5>
-      <p class="text-light justify-text">
-        Order your favorite meals online and get them delivered to your doorstep-fresh, hot, and hassle-free with real-time
-        tracking. Our intuitive platform ensures quick navigation and secure payments, bringing traditional meals to your home.
-        Every box is curated with care, Our intuitive platform ensures quick navigation and secure payments, bringing traditional 
-        meals to your home.
-      </p>
-    </div>
-    </div>
+        <!-- Row 2 -->
+        <div class="row align-items-center mb-5">
+          <!-- Catering -->
+          <div class="col-md-3">
+            <img src="images/foodiee1.jpg" alt="Catering Service"
+              class="img-fluid rounded  service-img">
+          </div>
+          <div class="col-md-3">
+            <h5 class="service-heading">Catering Services</h5>
+            <p class="text-light justify-text">
+              Let us serve your guests at weddings, parties, or business events
+              with custom thali menus and professional,
+              on-time catering. From intimate family functions to large-scale
+              corporate gatherings, we deliver exceptional
+              flavors and seamless. Our catering team works with you to design
+              tailored menus that suit the theme and mood
+              of your event. Enjoy hassle-free arrangements with setup.
+            </p>
+          </div>
 
-    <!-- Row 3 -->
-    <div class="row align-items-center mb-5">
-      <!-- Event Booking -->
-      <div class="col-md-3">
-        <img src="Images/bday.jpg" alt="Event Booking" class="img-fluid rounded service-img">
+          <!-- Online Order -->
+          <div class="col-md-3">
+            <img src="Images/foodie2.jpg" alt="Online Order"
+              class="img-fluid rounded service-img">
+          </div>
+          <div class="col-md-3">
+            <h5 class="service-heading">Online Ordering</h5>
+            <p class="text-light justify-text">
+              Order your favorite meals online and get them delivered to your
+              doorstep-fresh, hot, and hassle-free with real-time
+              tracking. Our intuitive platform ensures quick navigation and
+              secure payments, bringing traditional meals to your home.
+              Every box is curated with care, Our intuitive platform ensures
+              quick navigation and secure payments, bringing traditional
+              meals to your home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row align-items-center mb-5">
+          <!-- Event Booking -->
+          <div class="col-md-3">
+            <img src="Images/bday.jpg" alt="Event Booking"
+              class="img-fluid rounded service-img">
+          </div>
+          <div class="col-md-3">
+            <h5 class="service-heading">Event Booking</h5>
+            <p class="text-light justify-text">
+              Host private events like birthdays or anniversaries with special
+              seating, menu customization, and decor at The
+              Thali Yard. We offer themed arrangements, audio-visual setups, and
+              personalized service to turn your celebrations
+              into unforgettable experiences. From romantic candlelight dinners
+              to joyous family reunions, our venue adapts to
+              your occasion.
+            </p>
+          </div>
+
+          <!-- Custom Thali -->
+          <div class="col-md-3">
+            <img src="Images/foodie7.jpg" alt="Custom Thali"
+              class="img-fluid rounded service-img">
+          </div>
+          <div class="col-md-3">
+            <h5 class="service-heading">Custom Thali</h5>
+            <p class="text-light justify-text">
+              Pick and mix your favorite dishes to create a thali tailored to
+              your unique taste, spice preference, and dietary
+              needs. Whether you're vegan, gluten-free, or simply exploring
+              flavors, our flexible thali options let you design
+              meals that suit your lifestyle. Choose from a wide range of
+              curries, rice, breads, and sides—our staff will assist
+              you in building a balanced and flavorful meal every time you
+              visit.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <h5 class="service-heading">Event Booking</h5>
-        <p class="text-light justify-text">
-          Host private events like birthdays or anniversaries with special seating, menu customization, and decor at The
-          Thali Yard. We offer themed arrangements, audio-visual setups, and personalized service to turn your celebrations 
-          into unforgettable experiences. From romantic candlelight dinners to joyous family reunions, our venue adapts to 
-          your occasion.
-        </p>
-      </div>
+    </section>
 
-    <!-- Custom Thali -->
-    <div class="col-md-3">
-      <img src="Images/foodie7.jpg" alt="Custom Thali" class="img-fluid rounded service-img">
-    </div>
-    <div class="col-md-3">
-      <h5 class="service-heading">Custom Thali</h5>
-      <p class="text-light justify-text">
-        Pick and mix your favorite dishes to create a thali tailored to your unique taste, spice preference, and dietary
-        needs. Whether you're vegan, gluten-free, or simply exploring flavors, our flexible thali options let you design 
-        meals that suit your lifestyle. Choose from a wide range of curries, rice, breads, and sides—our staff will assist
-        you in building a balanced and flavorful meal every time you visit.
-      </p>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer Section Starts-->
-<footer class="footer custom-footer-bg">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      <!-- Address -->
-      <div class="col-md-3 mb-4">
-        <h6 class="text-uppercase fw-bold">Address</h6>
-       <p>
+    <!-- Footer Section Starts-->
+    <footer class="footer custom-footer-bg">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Address -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold">Address</h6>
+            <p>
               The Thali Yard, <br>
               Near Food Street, Nagpur,<br>
               MH - 440001<br>
             </p>
-            <a href="tel:9876543210" >
-               &#128222;+91-9876543210<br>
+            <a href="tel:9876543210">
+              &#128222;+91-9876543210<br>
             </a>
-             <a href="mailto:someone@example.com">
-               ✉️ info@thethaliyard.com<br>
+            <a href="mailto:someone@example.com">
+              ✉️ info@thethaliyard.com<br>
             </a>
-      </div>
+          </div>
 
-      <!-- Quick Links -->
-      <div class="col-md-3 mb-4 footer-links">
-        <h6 class="text-uppercase fw-bold">Quick Links</h6>
-        <ul class="list-unstyled">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4 footer-links">
+            <h6 class="text-uppercase fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
 
-      
           <!-- Follow Us -->
           <div class="col-md-3 mb-4 footer-links">
             <h6 class="text-uppercase fw-bold">Follow Us</h6>
             <ul class="list-unstyled">
-              <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/?flo=true" target="_blank"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i
+                    class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/?flo=true"
+                  target="_blank"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i
+                    class="bi bi-twitter"></i></a></li>
             </ul>
           </div>
 
-      <!-- Opening Hours -->
-      <div class="col-md-3 mb-4">
-        <h6 class="text-uppercase fw-bold">Opening Hours</h6>
-        <p>
-          Mon - Sun: 11:00 AM - 11:00 PM<br>
-        </p>
-        <div class="mt-3">
-          <h6 class="text-uppercase fw-bold">Find Us</h6>
-          <a href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur"
-             target="_blank"
-             class="map-link">
-            <i class="bi bi-geo-alt-fill icon-gold"></i> View on Google Maps
-          </a>
+          <!-- Opening Hours -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-bold">Opening Hours</h6>
+            <p>
+              Mon - Sun: 11:00 AM - 11:00 PM<br>
+            </p>
+            <div class="mt-3">
+              <h6 class="text-uppercase fw-bold">Find Us</h6>
+              <a href="https://www.google.com/maps/place/The+Thali+Yard,+Nagpur"
+                target="_blank"
+                class="map-link">
+                <i class="bi bi-geo-alt-fill icon-gold"></i> View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="text-center pt-2">
+          <p class="mb-0">&copy; 2025 <span class="text-gold">The Thali
+              Yard</span>. All rights reserved.</p>
         </div>
       </div>
-    </div>
-    <hr class="footer-divider" />
-    <div class="text-center pt-2">
-      <p class="mb-0">&copy; 2025 <span class="text-gold">The Thali Yard</span>. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-<!-- Footer section Ends -->
+    </footer>
+    <!-- Footer section Ends -->
 
-  <!-- Booking Modal -->
+    <!-- Booking Modal -->
     <div class="modal fade" id="bookingModal" tabindex="-1"
       aria-labelledby="bookingModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -287,5 +334,5 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
     </script>
-</body>
+  </body>
 </html>

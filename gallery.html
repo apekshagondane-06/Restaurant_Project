@@ -16,22 +16,30 @@
   </head>
   <body>
 
-    <!-- Navbar -->
+   <!-- Navbar -->
 <header>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Images/restaurant.png" alt="Bootstrap" width="30" height="24">
+      
+      <!-- Brand/Logo -->
+      <a class="navbar-brand fw-bold text-warning" href="#">
+        <img src="Images/restaurant.png" alt="Logo" width="30" height="24" class="me-2">
         The Thali Yard
       </a>
+
+      <!-- Toggler (Mobile Menu) -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars text-light fs-3"></i>
       </button>
 
+      <!-- Navbar Items -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <!-- Center Menu -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
@@ -39,241 +47,236 @@
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
-        <li class="nav-item">
-          <a class="nav-link btn btn-book px-3 rounded-pill" href="#"
-            data-bs-toggle="modal" data-bs-target="#bookingModal">
-            Book a Table
-          </a>
-        </li>
+
+        <!-- Right Button -->
+        <a class="btn btn-book px-3 rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#bookingModal">
+          Book a Table
+        </a>
       </div>
     </div>
   </nav>
 </header>
 <!-- Navbar Section Ends -->
 
-<!-- Script: Active page highlight -->
-<script>
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll('.nav-link').forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
     <!-- main starts -->
-    <main>
-      <section class="text-center" style="background: #232222; color: white;">
-        <h2 class="text-uppercase text-center pt-5"
-          style="color: #FFD700;"><strong>Our Gallery</strong></h2>
-        <p class="mb-5">Explore the vibrant flavors and traditional thalis of
-          The Thali Yard, served with love and authenticity.</p>
+<main>
+  <section class="gallery text-center" style="background:#232222; color:white;">
+    <h2 class="text-uppercase text-center pt-5" style="color:#FFD700;">
+      <strong>Our Gallery</strong>
+    </h2>
+    <p class="mb-5">
+      Explore the vibrant flavors and traditional thalis of The Thali Yard, served with love and authenticity.
+    </p>
 
-        
-        <h2 class="text-warning text-center mb-4"><strong>Our Services at a
-            Glance</strong></h2>
+    <h2 class="text-warning text-center mb-4"><strong>Our Services at a Glance</strong></h2>
 
-        <div class="container">
-          <div class="row">
+    <div class="container">
+      <div class="row">
 
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/Gallery_images/South_indian/south indian.jpg"
-                alt="idli">
-                <div class="hollow-text">Uattapam</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/thali3.jpg" alt="dosa">
-                <div class="hollow-text">Maharashtrian Veg Thali</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/chinese.jpg" alt="dosa">
-                <div class="hollow-text">Hakka Noodles</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/restro2.jpeg" alt="dosa">
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/food.jpg" alt="dosa">
-                <div class="hollow-text">Special Panjabi</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Menu_images/noodles.jpg" alt="dosa">
-                <div class="hollow-text">Noodles</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/food6.jpg" alt="dosa">
-                <div class="hollow-text">Simple Maharashtrian Thali</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/Gallery_images/South_indian/south_indian2.jpg"
-                alt="dosa">
-                <div class="hollow-text">Mini Uttapam Platter</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/food7.jpg" alt="dosa">
-                <div class="hollow-text">Dal Makhani Roti Plate</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded mb-3  hover-image"
-                src="Images/Menu_images/idli.jpg" alt="idli">
-                <div class="hollow-text">Idli</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/foodie.jpg" alt="foodie">
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Gallery_images/South_indian/dosa2.jpg" alt="dosa">
-                <div class="hollow-text">Dosa</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Gallery_images/South_indian/upma.jpg" alt="Upma">
-                <div class="hollow-text">Upma</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/food9.jpg" alt="dosa">
-                <div class="hollow-text">Special Panjabi</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/foodie1.jpeg" alt="dosa">
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Menu_images/chutneys.jpg" alt="dosa">
-                <div class="hollow-text">Chutneys</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3 hover-image"
-                src="Images/Menu_images/Manchurian .jpg" alt="dosa">
-                <div class="hollow-text">Manchurian with Noodles</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/restro1.jpg" alt="dosa">
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/restau3.jpg" alt="dosa">
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Menu_images/paneer2.jpg" alt="dosa">
-                <div class="hollow-text">Special Paneer</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Gallery_images/North_indian/dish_north.jpg"
-                alt="dosa">
-                <div class="hollow-text">Special Maharashtrian</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/res1.jpg" alt="dosa">
-                 
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Menu_images/shrikhand.jpg" alt="dosa">
-                <div class="hollow-text">Special Maharashtrian Khand</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Gallery_images/Maharashtrian/thali.jpg" alt="dosa">
-                <div class="hollow-text">Misal Pav</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Menu_images/rice.jpg" alt="dosa">
-                <div class="hollow-text">Fried Rice</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/res2.jpg" alt="dosa">
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded mb-3  hover-image"
-                src="Images/Gallery_images/Chainese/noodles3.png" alt="dosa">
-                <div class="hollow-text">Atta Noodles</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded mb-3 fit_img  hover-image"
-                src="Images/Gallery_images/Chainese/noodles4.jpg" alt="dosa">
-                <div class="hollow-text">Dry Noodles</div>
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Gallery_images/North_indian/north indian2.jpg"
-                alt="dosa">
-                <div class="hollow-text">Rajma Chawal</div>
-            </div>
-
-            <div class="col-md-4 background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/foodie4.jpg" alt="dosa">
-            </div>
-
-            <div class="col-md-4 image-text-container background">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/Gallery_images/North_indian/north_indian.jpg"
-                alt="dosa">
-                <div class="hollow-text">Classic Maharashtrian Thali</div>
-            </div>
-
-            <div class="col-md-4">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/foodie3.jpg" alt="food">
-            </div>
-
-            <div class="col-md-4">
-              <img class="img-fluid rounded fit_img mb-3  hover-image"
-                src="Images/foodie7.jpg" alt="dosa">
-            </div>
-
-          </div>
+        <!-- 1 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/South_indian/south indian.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Uttapam</h3></div>
         </div>
-      </section>
-    </main>
-    <!-- main ends -->
+
+        <!-- 2 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/thali3.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Maharashtrian Veg Thali</h3></div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/chinese.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Hakka Noodles</h3></div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/restro2.jpeg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Restaurant Interior</h3></div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/food.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Special Panjabi</h3></div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/noodles.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Noodles</h3></div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/food6.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Simple Maharashtrian Thali</h3></div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/South_indian/south_indian2.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Mini Uttapam Platter</h3></div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/food7.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Dal Makhani Roti Plate</h3></div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/idli.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Idli</h3></div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/foodie.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Foodie Special</h3></div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/South_indian/dosa2.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Dosa</h3></div>
+        </div>
+
+        <!-- 13 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/South_indian/upma.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Upma</h3></div>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/food9.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Special Panjabi</h3></div>
+        </div>
+
+        <!-- 15 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/foodie1.jpeg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Foodie Dish</h3></div>
+        </div>
+
+        <!-- 16 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/chutneys.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Chutneys</h3></div>
+        </div>
+
+        <!-- 17 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/Manchurian .jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Manchurian with Noodles</h3></div>
+        </div>
+
+        <!-- 18 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/restro1.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Restaurant Ambience</h3></div>
+        </div>
+
+        <!-- 19 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/restau3.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Dining Area</h3></div>
+        </div>
+
+        <!-- 20 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/paneer2.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Special Paneer</h3></div>
+        </div>
+
+        <!-- 21 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/North_indian/dish_north.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Special Maharashtrian</h3></div>
+        </div>
+
+        <!-- 22 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/res1.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Res1 Dish</h3></div>
+        </div>
+
+        <!-- 23 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/shrikhand.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Rashmalai</h3></div>
+        </div>
+
+        <!-- 24 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/Maharashtrian/thali.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Misal Pav</h3></div>
+        </div>
+
+        <!-- 25 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Menu_images/rice.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Fried Rice</h3></div>
+        </div>
+
+        <!-- 26 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/res2.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Res2 Dish</h3></div>
+        </div>
+
+        <!-- 27 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/Chainese/noodles3.png" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Atta Noodles</h3></div>
+        </div>
+
+        <!-- 28 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/Chainese/noodles4.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Dry Noodles</h3></div>
+        </div>
+
+        <!-- 29 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/North_indian/north indian2.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Rajma Chawal</h3></div>
+        </div>
+
+        <!-- 30 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/foodie4.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Parties</h3></div>
+        </div>
+
+        <!-- 31 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/Gallery_images/North_indian/north_indian.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Classic Thali</h3></div>
+        </div>
+
+        <!-- 32 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/foodie3.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Parties</h3></div>
+        </div>
+
+        <!-- 33 -->
+        <div class="col-md-4 gallery-col">
+          <img src="Images/foodie7.jpg" class="img-fluid rounded mb-3">
+          <div class="layer"><h3>Multiple Dishes</h3></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+<!-- main ends -->
+
 
     <!-- Footer Section Starts-->
     <footer class="footer custom-footer-bg">
@@ -402,24 +405,11 @@
         </div>
       </div>
     </div>
-    <!-- Book a table sucessfull alert Js -->
-    <script>
-  document.getElementById("reservationForm").addEventListener("submit", function (e) {
-    e.preventDefault(); 
-    document.getElementById("successAlert").classList.remove("d-none");
-    this.reset();
-    
-    setTimeout(() => {
-      document.getElementById("successAlert").classList.add("d-none");
-      const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
-      modal.hide();
-    }, 2000);
-  });
-</script>
 
     <!-- Bootstrap 5 JS (with Popper.js) -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+      <script type="text/javascript" src="JS/gallery.js"></script>
+</body>
 </html>

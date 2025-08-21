@@ -21,3 +21,11 @@ document.getElementById("reservationForm").addEventListener("submit", function (
       modal.hide();
     }, 2000);
   });
+
+// active navbar page js
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
