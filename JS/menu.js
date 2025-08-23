@@ -37,9 +37,4 @@ function confirmOrder() {
     }, 2000);
   });
   //  Navbar active page js
-   const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll('.nav-link').forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
+  
