@@ -138,7 +138,10 @@ body {
   transition: transform 0.3s;
   transform-style: preserve-3d;
 }
-
+.light-section {
+  background-color: white;
+  color: black;
+}
 .testimonial-card {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
