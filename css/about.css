@@ -147,7 +147,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #FFBF00;
   border-radius: 3px;
-  background-color: white; color: black
+  background-color: white; color: black;
 }
 
 .testimonial-card:hover {
